@@ -169,9 +169,12 @@
 
   <!-- =======================================================================
        CONTACT FORM + DIRECT DETAILS
-       ⚠️ The form needs a backend. Set the action= to your form handler
-       (Formspree, Netlify Forms, Basin, your own endpoint). As it stands it
-       validates but doesn't send. See README.md § Wiring up the form.
+       The form posts to FormSubmit (formsubmit.co), which forwards every
+       message to vf.psychology@gmail.com. No account needed: the FIRST
+       submission triggers a one-time activation e-mail to that inbox — click
+       the link in it, and everything after that is delivered directly.
+       Hidden fields configure the subject, honeypot, and thank-you page.
+       See README.md § Wiring up the form.
        ==================================================================== -->
   <section class="section section--alt section--contact">
     <div class="container split">
@@ -187,8 +190,17 @@
           </p>
         </div>
 
-        <form class="form" method="post" action="#REPLACE-WITH-FORM-ENDPOINT"
+        <form class="form" method="post" action="https://formsubmit.co/vf.psychology@gmail.com"
               data-validate novalidate>
+
+          <!-- FormSubmit settings. _next must be an absolute URL: update it
+               when the site moves to vf-psychology.nl. -->
+          <input type="hidden" name="_subject" value="New message via the VF Psychology website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://vf-psycology.vercel.app/thank-you.html">
+          <!-- Honeypot: hidden from people, filled in by bots → silently dropped -->
+          <input type="text" name="_honey" class="u-visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="form__field">
             <label class="form__label" for="name">

@@ -28,7 +28,8 @@ index.html          Home — hero, recognition, mission & approach, how I can
 about.html          About, credentials, VF-Psychology, experience, approach
 services.html       Six service blocks + fees & reimbursement (PGB)
 testimonials.html   All client testimonials, in English and Spanish
-contact.html        Calendly booking embed, contact form, direct details
+contact.html        Booking (Calendly, currently off), contact form, details
+thank-you.html      Landing page after the form is sent (noindex)
 privacy.html        GDPR privacy statement scaffold
 assets/css/style.css
 assets/js/main.js
@@ -57,8 +58,9 @@ can fill in.
    needs your actual processors (video platform, records system, email host,
    booking tool) and a review by someone qualified. Delete the draft warning
    banner at the top once it's done.
-4. **Wire up the contact form.** See § Wiring up the form below. Right now it
-   validates but does not send.
+4. **Activate the contact form.** It already sends to vf.psychology@gmail.com
+   via FormSubmit; the first submission triggers a one-time activation e-mail
+   that must be clicked. See § Wiring up the form.
 5. **Booking calendar.** The Calendly inline widget from the live site is
    already embedded in `contact.html`. Keep `id="book"` on that section —
    every CTA on every page links to it. Calendly loads a third-party script;
@@ -231,22 +233,31 @@ invisible.
 
 ## Wiring up the form
 
-`contact.html` contains a working, validating form with no backend. Point it at
-a handler:
+`contact.html` posts to **FormSubmit** (formsubmit.co), which forwards every
+message to `vf.psychology@gmail.com`. No account, no key:
 
 ```html
-<form class="form" method="post" action="https://formspree.io/f/YOUR-ID"
+<form class="form" method="post" action="https://formsubmit.co/vf.psychology@gmail.com"
       data-validate novalidate>
 ```
 
-Any handler works — Formspree, Netlify Forms, Basin, or your own endpoint.
+- **Activation (once).** The very first submission makes FormSubmit send an
+  activation e-mail to vf.psychology@gmail.com. Click the link in it; from then
+  on every message arrives directly. Until that click nothing is delivered.
+- Hidden fields set the subject line, the table layout of the e-mail, turn
+  off FormSubmit's captcha page (a honeypot field `_honey` catches bots
+  instead) and redirect to `thank-you.html` afterwards. `_next` must be an
+  absolute URL — **update it when the domain changes** from the Vercel
+  preview to vf-psychology.nl.
+- The visitor's e-mail is used as reply-to, so you can answer straight from
+  your inbox.
+- To change the destination address, change it in the `action=` — that's the
+  only place it lives (FormSubmit will ask for a new activation click).
 
-Two things to keep in mind. The form asks people why they're getting in touch,
-so the answers may contain health information: pick a processor that will sign
-a data processing agreement and stores data in the EEA, and list it in the
-privacy statement. And add a honeypot or the handler's own spam protection —
-the form has none, deliberately, because every option ties you to a specific
-service.
+FormSubmit is named in the privacy statement as a processor. If you'd rather
+use a provider that signs a data-processing agreement and stores data in the
+EEA (the message field may contain health information), swap the `action=`
+for Formspree, Basin or your own endpoint and update the privacy statement.
 
 ---
 
