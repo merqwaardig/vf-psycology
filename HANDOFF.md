@@ -139,6 +139,7 @@ project, point DNS there, then do the domain checklist below.
 
 ## 5. Open items (in order of importance)
 
+### A. Content & legal — needed before the site can replace the old one
 1. **Activate FormSubmit** — one test submission + click the activation link
    in vf.psychology@gmail.com. Without this the form goes nowhere.
 2. **VAT number** — footer on all 7 pages still says `VAT [VAT NUMBER]`.
@@ -149,22 +150,64 @@ project, point DNS there, then do the domain checklist below.
    details and ideally a review by someone qualified. Remove the "draft"
    banner at the top when done.
 4. **City** — `"addressLocality": "[CITY]"` in the JSON-LD on `index.html`.
-5. **Fonts** — download Fraunces + Inter variable `.woff2` (Google Fonts,
+5. **Testimonials consent** — the 14 quotes are the ones from the old site
+   with the same first names + countries. Confirm each client is fine with
+   them being reused.
+
+### B. Assets
+6. **Fonts** — download Fraunces + Inter variable `.woff2` (Google Fonts,
    latin subset), drop into `assets/fonts/` with the exact filenames in
    README § Fonts. Until then system fonts are used (looks fine, slightly
    different).
-6. **Photos** — hero, about-preview and about page all use the same portrait.
+7. **Favicon** — make `favicon.svg` (brain mark or "VF"), `favicon.ico` and
+   `apple-touch-icon.png` (180×180) from `assets/img/logo-mark.svg`, put them
+   in `assets/img/`, and uncomment the favicon block in the `<head>` of all
+   7 pages.
+8. **Photos** — hero, about-preview and about page all use the same portrait.
    A second frame for the about page would avoid the repeat. Also needed:
-   `assets/img/og-default.jpg` (1200×630) for social sharing, and a favicon
-   (block is commented out in each `<head>`).
-7. **Testimonials consent** — the 14 quotes are the ones from the old site
-   with the same first names + countries. Confirm each client is fine with
-   them being reused.
-8. **Domain move** — when going to vf-psychology.nl: update `_next` on the
-   form (see above); canonical/og:url are already `vf-psychology.nl`, as are
-   `sitemap.xml` and `robots.txt`.
-9. **Analytics** — GA4/GTM placeholder is commented out in `index.html`
-   `<head>`. GDPR: needs cookieless config or a consent banner.
+   `assets/img/og-default.jpg` (1200×630) for social sharing.
+
+### C. E-mail, domain & hosting
+9. **Create info@vf-psychology.nl** — a proper practice mailbox instead of the
+   Gmail address. Once it exists and is monitored, replace
+   `vf.psychology@gmail.com` in: the form `action=` on `contact.html`
+   (FormSubmit sends a new activation mail to the new address), the footer
+   on all pages, `contact.html`, `thank-you.html`, the JSON-LD on `index.html`
+   / `services.html` / `contact.html`, and `privacy.html`. Grep for
+   `vf.psychology@gmail.com` — that's every spot.
+10. **Move the domain to Cloud86** — transfer `vf-psychology.nl` from its
+    current registrar to Cloud86 (also host the mailbox there). Then decide
+    where the site is served from: keep Vercel (point DNS A/CNAME at Vercel,
+    add the domain in the Vercel project) or upload the static files to
+    Cloud86 hosting. Either works — there is no build step. Don't cancel
+    Squarespace until the new site is live on the domain.
+11. **Domain switch checklist** — when vf-psychology.nl points to the new
+    site: update `_next` on the form (see § 4), check `sitemap.xml` /
+    `robots.txt` / canonical URLs (already set to vf-psychology.nl), test the
+    form and every CTA on the live domain.
+
+### D. Analytics, tracking & search
+12. **Google Tag Manager** — create a GTM container, paste the snippet in the
+    commented `ANALYTICS PLACEHOLDER` block in the `<head>` of every page
+    (currently only on `index.html`; copy it to the other 6). Load GA4 and
+    anything else through GTM, not as separate scripts.
+13. **Google Analytics 4** — create the property, add the GA4 tag in GTM.
+    GDPR: either run GA4 without cookies / with consent mode, or add a
+    consent banner before firing it. Nothing is loaded until this is done.
+14. **Google Search Console** — verify `vf-psychology.nl` (DNS TXT record via
+    Cloud86 is easiest), submit `https://vf-psychology.nl/sitemap.xml`,
+    request indexing of the 6 public pages, and keep an eye on Core Web
+    Vitals. Do the same in Bing Webmaster Tools (that also feeds ChatGPT /
+    Copilot search).
+15. **Sitemap for Google and AI search** — `sitemap.xml` exists and lists all
+    public pages (thank-you.html is deliberately excluded and `noindex`).
+    Keep `<lastmod>` current when pages change. For AI search: `robots.txt`
+    already allows all crawlers — leave it that way (don't block GPTBot,
+    ClaudeBot, PerplexityBot etc.); add an `llms.txt` at the root with a short
+    plain-text description of the practice, services, languages, and the
+    page URLs; and keep the JSON-LD (Person / ProfessionalService / FAQPage)
+    up to date — that structured data is what AI answers and Google rich
+    results read.
 
 ---
 
