@@ -1,0 +1,7 @@
+# robots.txt — VF Psychology
+# Everything on this site is meant to be found.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://vf-psychology.nl/sitemap.xml

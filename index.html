@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>VF Psychology — Online Psychologist for Internationals</title>
+  <meta name="description" content="Online psychologist for international clients worldwide. MSc specialized in Child and Adolescent Psychology. Support for anxiety, stress, expat mental health, emotional issues and life transitions. Therapy in English, Spanish, and Dutch (for children).">
+  <link rel="canonical" href="https://vf-psychology.nl/">
+
+  <!-- OPEN GRAPH / TWITTER
+       og:image should be 1200×630. Drop the file at assets/img/og-default.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VF Psychology">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://vf-psychology.nl/">
+  <meta property="og:title" content="VF Psychology — Online Psychologist for Internationals">
+  <meta property="og:description" content="Online psychologist for international clients worldwide. Support for anxiety, stress, expat mental health, emotional issues and life transitions. Book a free consultation.">
+  <meta property="og:image" content="https://vf-psychology.nl/assets/img/og-default.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VF Psychology — Online Psychologist for Internationals">
+  <meta name="twitter:description" content="Online therapy in English, Spanish and Dutch (for children). Book a free consultation.">
+  <meta name="twitter:image" content="https://vf-psychology.nl/assets/img/og-default.jpg">
+
+  <meta name="theme-color" content="#FDFBF8">
+
+  <!-- FAVICON — drop the real files in /assets/img/ and these light up.
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  -->
+
+  <!-- FONTS — self-hosted, no third-party request. Preload only the two
+       files the first screen needs. See README.md § Fonts before removing. -->
+  <link rel="preload" href="assets/fonts/fraunces-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Sets .js on <html> before first paint so reveal-on-scroll doesn't
+       flash its content in and back out. Kept inline and one line long
+       deliberately — anything larger belongs in main.js. -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- ===================================================================
+       ANALYTICS PLACEHOLDER — GA4 / GTM
+       Paste the snippet here. Nothing else on the site depends on it.
+       Note: under GDPR you need consent before setting analytics cookies.
+       Either configure GA4 in cookieless mode or gate this behind a
+       consent banner before going live.
+       ===================================================================
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- STRUCTURED DATA — Person + ProfessionalService + FAQPage.
+       Replace every [BRACKETED] value before launch. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://vf-psychology.nl/#practitioner",
+        "name": "Valeria Verhaar Flores",
+        "honorificSuffix": "MSc",
+        "jobTitle": "Clinical Psychologist",
+        "url": "https://vf-psychology.nl/about.html",
+        "image": "https://vf-psychology.nl/assets/img/valeria-portrait.jpg",
+        "knowsLanguage": ["en", "es", "nl"],
+        "sameAs": [
+          "http://www.linkedin.com/in/valeria-flores-098a24256",
+          "https://www.instagram.com/valeria.flores_psychologist",
+          "https://www.facebook.com/share/18cxweYnqf/?mibextid=wwXIfr",
+          "https://twitter.com/vf_psychology"
+        ],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Leiden University" },
+          { "@type": "CollegeOrUniversity", "name": "Universidad Autónoma de Chile" }
+        ],
+        "memberOf": [
+          { "@type": "Organization", "name": "Nederlands Instituut van Psychologen (SPS-NIP), member no. 245010" },
+          { "@type": "Organization", "name": "Kwaliteitsregister Jeugd (SKJ), registration no. 160029073" }
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "name": "MSc Child and Adolescent Psychology (cum laude), Leiden University"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "name": "BSc Psychology (cum laude), Universidad Autónoma de Chile"
+          }
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://vf-psychology.nl/#practice",
+        "name": "VF Psychology",
+        "foundingDate": "2020-02",
+        "description": "Online psychologist for international clients worldwide. Individual therapy, child and adolescent psychology, behavioral therapy for autism, couple counseling, expat mental health support and guidance for parents. Sessions in English, Spanish, and Dutch (for children).",
+        "url": "https://vf-psychology.nl/",
+        "image": "https://vf-psychology.nl/assets/img/valeria-portrait.jpg",
+        "email": "vf.psychology@gmail.com",
+        "telephone": "+31638136116",
+        "founder": { "@id": "https://vf-psychology.nl/#practitioner" },
+        "availableLanguage": ["English", "Spanish", "Dutch"],
+        "areaServed": { "@type": "Place", "name": "Worldwide (online)" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "NL",
+          "addressLocality": "[CITY]"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://vf-psychology.nl/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What services do you offer?",
+            "acceptedAnswer": { "@type": "Answer", "text": "I provide a range of psychological services, including individual therapy for anxiety, self-esteem issues, emotional regulation, and personal growth. Additionally, I offer child and adolescent psychology services, behavioral therapy for autism, and support for expats adjusting to new environments." }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I book an appointment?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You can book a free 30-minute intake session through the booking section on the contact page. Alternatively, you can contact me via email at vf.psychology@gmail.com." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer online therapy sessions?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, I offer online therapy sessions to ensure accessibility for clients who cannot attend in-person sessions or prefer remote consultations." }
+          },
+          {
+            "@type": "Question",
+            "name": "What can I expect during the first session?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The initial session is an opportunity for us to get to know each other. We'll discuss your current challenges, goals for therapy, and any questions you might have. This helps in tailoring a personalized approach to your therapy journey." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does each therapy session last?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Typically, each therapy session lasts about 45 minutes. However, the duration can be adjusted based on individual needs and treatment plans." }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sessions will I need?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The number of sessions varies depending on individual goals and challenges. Some clients find resolution in a few sessions, while others may benefit from longer-term therapy. We'll regularly review your progress to ensure your needs are being met." }
+          },
+          {
+            "@type": "Question",
+            "name": "What languages do you offer therapy in?",
+            "acceptedAnswer": { "@type": "Answer", "text": "I offer therapy sessions in both English and Spanish to accommodate a diverse clientele. Additionally, I provide sessions in Dutch for children, ensuring they feel comfortable and supported in their native language." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I know if therapy is right for me?",
+            "acceptedAnswer": { "@type": "Answer", "text": "If you are struggling with stress, anxiety, self-doubt, relationship issues, or any emotional difficulties that affect your daily life, therapy can be a valuable tool to help you gain clarity and develop coping strategies. Our first session will help determine if therapy is the right path for you." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer therapy for expats?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes! As an experienced psychologist working with the expat community, I understand the unique challenges of adjusting to life in a new country. I provide a safe and supportive space to explore issues related to cultural adaptation, loneliness, and identity." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get started?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Getting started is easy! You can book a free intake session through my website or send me an email at vf.psychology@gmail.com. I'd be happy to answer any questions and help you begin your journey toward mental well-being." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are your fees?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Because therapy is a personal and individualized process, the tariff is discussed during our free intake session. This allows us to explore your situation, the type of support you need, and the best approach for your therapy, ensuring that the pricing is fair and transparent for your specific case. For detailed information about fees please contact me directly at vf.psychology@gmail.com or book a free intake where I can answer all your questions." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you accept insurance?",
+            "acceptedAnswer": { "@type": "Answer", "text": "I am a private psychologist and do not work with insurance companies in the Netherlands. The mental healthcare system is currently overwhelmed, with long waiting lists for insured care. By offering private therapy, I can guarantee immediate availability, so you can receive the support you need without unnecessary delays. My fees are accessible, and some families may be able to finance their sessions through the Personal Budget (PGB) provided by the municipality." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the PGB and how does it work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The PGB (Persoonsgebonden Budget) is a subsidy that allows individuals with specific care needs to hire professionals of their choice, rather than relying solely on public healthcare services. If you meet the requirements, you can apply for this budget through your municipality and use it to cover the cost of therapy sessions." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =========================================================================
+     HEADER — logo, nav, persistent booking CTA (mobile included)
+     ====================================================================== -->
+<header class="header" data-header>
+  <div class="container header__inner">
+
+    <a class="logo" href="index.html" aria-label="VF Psychology — home">
+      <img class="logo__brain" src="assets/img/logo-mark.svg" alt="" width="86" height="90" decoding="async">
+      <span class="logo__text">
+        <span class="logo__mark">VF</span>
+        <span class="logo__sub">Psychology</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list" id="nav-panel" data-nav-panel>
+        <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="testimonials.html">Testimonials</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <a class="btn btn--primary header__cta" href="contact.html#book">
+        <span class="header__cta-short">Book intake</span>
+        <span class="header__cta-long">Book a free consultation</span>
+      </a>
+
+      <button class="nav__toggle" type="button"
+              aria-expanded="false" aria-controls="nav-panel"
+              data-nav-toggle>
+        <span class="u-visually-hidden">Menu</span>
+        <svg class="nav__toggle-icon nav__toggle-icon--open" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/>
+        </svg>
+        <svg class="nav__toggle-icon nav__toggle-icon--close" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4 6.4 5Z"/>
+        </svg>
+      </button>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- =======================================================================
+       HERO — the promise, who it's for, both CTAs, one trust line
+       ==================================================================== -->
+  <section class="section hero section--hero">
+    <div class="container split">
+
+      <div class="hero__content">
+        <span class="section__eyebrow">Welcome to VF-Psychology</span>
+        <h1 class="hero__title">Helping you navigate life&rsquo;s challenges with confidence.</h1>
+
+        <p class="hero__subtitle">
+          Life can sometimes feel overwhelming, and seeking help is a courageous
+          first step toward healing and growth. Together, we can explore the
+          paths that will lead to deeper clarity, emotional balance, and lasting
+          change. You&rsquo;re not alone in this journey.
+        </p>
+
+        <div class="hero__actions btn-row">
+          <a class="btn btn--primary" href="contact.html#book">Book a free consultation</a>
+          <a class="btn btn--secondary" href="#how-i-work">My therapeutic approach</a>
+        </div>
+
+        <p class="hero__note">Take the first step today.</p>
+
+        <ul class="hero__trust">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6l-9-4Zm-1.2 14.2L7 12.4l1.4-1.4 2.4 2.4 5-5L17.2 10l-6.4 6.2Z"/></svg>
+            MSc Child &amp; Adolescent Psychology, Leiden University (cum laude)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3a15.4 15.4 0 0 0-1.2-5.4A8 8 0 0 1 18.9 11ZM12 4.2c.8 1.2 1.5 3.5 1.7 6.8h-3.4c.2-3.3.9-5.6 1.7-6.8ZM5.1 11a8 8 0 0 1 4.2-5.4A15.4 15.4 0 0 0 8.1 11h-3Zm0 2h3a15.4 15.4 0 0 0 1.2 5.4A8 8 0 0 1 5.1 13Zm6.9 6.8c-.8-1.2-1.5-3.5-1.7-6.8h3.4c-.2 3.3-.9 5.6-1.7 6.8Zm2.7-1.4a15.4 15.4 0 0 0 1.2-5.4h3a8 8 0 0 1-4.2 5.4Z"/></svg>
+            English &amp; Spanish &middot; Dutch for children
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h13a2 2 0 0 1 2 2v2.4l3-2.1v9.4l-3-2.1V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+            Online, for international clients worldwide
+          </li>
+        </ul>
+      </div>
+
+      <!-- PHOTO 1 of 3 — portrait of Valeria, 4:5 portrait crop, min 800×1000. -->
+      <figure class="hero__figure">
+        <img class="hero__portrait"
+             src="assets/img/valeria-portrait.jpg"
+             alt="Valeria Verhaar Flores, clinical psychologist and founder of VF Psychology"
+             width="800" height="1000" fetchpriority="high" decoding="async">
+        <figcaption class="hero__caption">
+          Valeria Verhaar Flores, MSc &mdash; founder of VF-Psychology
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       RECOGNITION — the empathy hook. Questions taken from the services page.
+       ==================================================================== -->
+  <section class="section section--alt section--recognition">
+    <div class="container">
+
+      <div class="section__head reveal">
+        <span class="section__eyebrow">Does this sound familiar?</span>
+        <h2>You don&rsquo;t have to navigate life&rsquo;s difficulties alone.</h2>
+      </div>
+
+      <ul class="recognition__list reveal">
+        <li class="recognition__item">
+          Do you often feel overwhelmed by your emotions? Struggling with
+          stress, anxiety, or self-doubt?
+        </li>
+        <li class="recognition__item">
+          Is your child struggling with emotional regulation, anxiety, or
+          behavioral challenges? Are you looking for the right guidance to
+          support them?
+        </li>
+        <li class="recognition__item">
+          Are you and your partner struggling to communicate? Do small
+          disagreements turn into big conflicts?
+        </li>
+        <li class="recognition__item">
+          Are you finding it hard to adjust to life in a new country? Do
+          feelings of loneliness, uncertainty, or culture shock make everyday
+          life more difficult?
+        </li>
+      </ul>
+
+      <p class="recognition__closer reveal">
+        You&rsquo;re not alone, and support is available. Let&rsquo;s work
+        together to help you regain balance and confidence.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       HOW I WORK — mission + the four pillars of the therapeutic approach
+       ==================================================================== -->
+  <section class="section section--how" id="how-i-work">
+    <div class="container">
+
+      <div class="section__head reveal">
+        <span class="section__eyebrow">Mission &amp; approach</span>
+        <h2>A safe, supportive, and understanding space.</h2>
+        <p class="section__lede">
+          My mission as a psychologist is to provide a safe, supportive, and
+          understanding space where you can explore your emotions, overcome
+          challenges, and grow into the best version of yourself. Whether
+          you&rsquo;re struggling with anxiety, self-esteem, depression,
+          relationship difficulties, or personal development, I am here to
+          guide you with compassion and professional expertise.
+        </p>
+      </div>
+
+      <div class="grid u-grid-2 reveal">
+
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.5-8 5.5V22h16v-2.5c0-3-3.6-5.5-8-5.5Z"/></svg>
+          </span>
+          <h3 class="card__title">Client-centered &amp; strength-based</h3>
+          <p class="card__text">
+            Therapy is a collaborative process where your voice matters. I work
+            alongside you to build on your strengths and create positive change.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M4 4h16v2H4V4Zm0 5h10v2H4V9Zm0 5h16v2H4v-2Zm0 5h10v2H4v-2Z"/></svg>
+          </span>
+          <h3 class="card__title">Evidence-based techniques</h3>
+          <p class="card__text">
+            I use scientifically supported methods such as CBT, SFT, and
+            Behavioral Therapy, ensuring that you receive effective,
+            results-driven support.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s-7.5-4.6-9.3-9A5.3 5.3 0 0 1 12 6.6a5.3 5.3 0 0 1 9.3 5.4C19.5 16.4 12 21 12 21Z"/></svg>
+          </span>
+          <h3 class="card__title">A safe &amp; supportive space</h3>
+          <p class="card__text">
+            My priority is to provide a judgment-free, compassionate environment
+            where you feel comfortable expressing yourself.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3a15.4 15.4 0 0 0-1.2-5.4A8 8 0 0 1 18.9 11ZM12 4.2c.8 1.2 1.5 3.5 1.7 6.8h-3.4c.2-3.3.9-5.6 1.7-6.8ZM5.1 11a8 8 0 0 1 4.2-5.4A15.4 15.4 0 0 0 8.1 11h-3Zm0 2h3a15.4 15.4 0 0 0 1.2 5.4A8 8 0 0 1 5.1 13Zm6.9 6.8c-.8-1.2-1.5-3.5-1.7-6.8h3.4c-.2 3.3-.9 5.6-1.7 6.8Zm2.7-1.4a15.4 15.4 0 0 0 1.2-5.4h3a8 8 0 0 1-4.2 5.4Z"/></svg>
+          </span>
+          <h3 class="card__title">Flexible &amp; culturally sensitive</h3>
+          <p class="card__text">
+            I understand the complex emotions and challenges that come with
+            cultural transitions, expatriate life, and personal growth. My
+            practice is open to people of all backgrounds, and sessions are
+            available in Spanish and English.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="u-mt-lg u-muted reveal">
+        At VF-Psychology, I believe that therapy should be adapted to each
+        individual&rsquo;s unique needs and circumstances. My approach is
+        personalized, flexible, and goal-oriented, ensuring that every client
+        receives the support that best fits their situation.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       WHO I HELP — the four services from the live homepage
+       ==================================================================== -->
+  <section class="section section--alt section--audiences">
+    <div class="container">
+
+      <div class="section__head reveal">
+        <span class="section__eyebrow">How I can help</span>
+        <h2>Support for children, adolescents, adults, and their families.</h2>
+      </div>
+
+      <div class="grid u-grid-2 reveal">
+
+        <article class="card card--filled">
+          <h3 class="card__title">Individual therapy</h3>
+          <p class="card__text">
+            Support for anxiety, self-esteem, emotional regulation, and
+            personal growth. Each session is tailored to your needs, creating a
+            safe, non-judgmental space to explore your thoughts and emotions.
+          </p>
+          <ul class="card__list">
+            <li>Manage anxiety, depression, and stress</li>
+            <li>Improve self-esteem and emotional regulation</li>
+            <li>Navigate life transitions, career challenges, and personal growth</li>
+          </ul>
+        </article>
+
+        <article class="card card--filled">
+          <h3 class="card__title">Child &amp; adolescent psychology</h3>
+          <p class="card__text">
+            Guidance for young individuals facing emotional or behavioral
+            difficulties, using behavioral training, Solution-Focused Therapy
+            and CBT.
+          </p>
+          <ul class="card__list">
+            <li>Strengthen self-regulation and coping mechanisms</li>
+            <li>Manage anxiety, fears, and negative thinking patterns</li>
+            <li>Improve focus, social skills, and daily habits</li>
+          </ul>
+        </article>
+
+        <article class="card card--filled">
+          <h3 class="card__title">Behavioral therapy for autism</h3>
+          <p class="card__text">
+            Tailored interventions to promote positive development and
+            well-being. I take a holistic approach that integrates biological,
+            psychological, and social factors.
+          </p>
+          <ul class="card__list">
+            <li>Structured support for emotional regulation and communication</li>
+            <li>Developing social skills, routines and structure</li>
+            <li>Guidance for parents alongside the child&rsquo;s therapy</li>
+          </ul>
+        </article>
+
+        <article class="card card--filled">
+          <h3 class="card__title">Expat mental health support</h3>
+          <p class="card__text">
+            Assistance in adapting to new environments and overcoming cultural
+            challenges. As an expat myself, I understand the emotional and
+            psychological adjustments that come with cultural transitions.
+          </p>
+          <ul class="card__list">
+            <li>Overcome loneliness, homesickness, and cultural adjustment difficulties</li>
+            <li>Manage stress, anxiety, and emotional challenges related to relocation</li>
+            <li>Build resilience and a strong sense of identity in a new environment</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <p class="u-mt-lg u-muted reveal">
+        I also offer <a href="services.html#couples">couple counseling</a> and
+        <a href="services.html#parents">guidance for parents &amp; families</a>.
+        See the <a href="services.html">full overview of services</a>, or
+        <a href="contact.html#book">book a free consultation</a> to discuss
+        what fits your situation.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       ABOUT PREVIEW — photo, name, credentials, one paragraph, link out
+       ==================================================================== -->
+  <section class="section section--about-preview">
+    <div class="container split">
+
+      <!-- PHOTO 2 of 3 — square 1:1 crop of the same portrait session, or a
+           second, more relaxed frame. Min 700×700. -->
+      <figure class="about-preview__figure reveal">
+        <img class="about-preview__portrait"
+             src="assets/img/valeria-portrait.jpg"
+             alt="Valeria Verhaar Flores smiling, seated at a table with a cup of coffee"
+             width="700" height="700" loading="lazy" decoding="async">
+      </figure>
+
+      <div class="about-preview__content reveal">
+        <span class="section__eyebrow">About</span>
+        <h2>Valeria Verhaar Flores, MSc</h2>
+        <p class="u-mt-sm u-muted">Founder of VF-Psychology</p>
+        <p class="u-mt-md">
+          I am a Clinical Psychologist specialized in Child and Adolescent
+          Psychology, holding a Master of Science (Cum Laude) from Leiden
+          University. I also earned my Bachelor&rsquo;s degree in Psychology
+          (Cum Laude) from the Universidad Autónoma de Chile. Originally from
+          Chile, I have been living in the Netherlands since 2019, where I work
+          with a diverse international community of children, adolescents,
+          adults, and their families.
+        </p>
+        <ul class="about-preview__credentials">
+          <li>MSc Child &amp; Adolescent Psychology, Leiden University (cum laude)</li>
+          <li>BSc Psychology, Universidad Autónoma de Chile (cum laude)</li>
+          <li>Registered member SPS-NIP (no. 245010) &middot; SKJ Master Psychologist (no. 160029073)</li>
+        </ul>
+        <p class="u-mt-md">
+          <a href="about.html">Read more about my experience and credentials</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       PROCESS — the therapeutic process in three phases
+       ==================================================================== -->
+  <section class="section section--alt section--process">
+    <div class="container">
+
+      <div class="section__head reveal">
+        <span class="section__eyebrow">The therapeutic process</span>
+        <h2>Three phases, reviewed together as we go.</h2>
+      </div>
+
+      <ol class="steps reveal">
+
+        <li class="steps__item">
+          <h3 class="steps__title">Initial evaluation</h3>
+          <p class="steps__text">
+            During these sessions, we discuss the reasons for consultation and
+            explore the challenges you are facing, identify possible underlying
+            causes of emotional or behavioral difficulties, and use structured
+            assessments, guided conversations, and small tasks to gain a deeper
+            insight into your situation. Together we develop a preliminary plan
+            for therapy based on your needs.
+          </p>
+          <span class="steps__meta">Starts with a free 30-minute intake</span>
+        </li>
+
+        <li class="steps__item">
+          <h3 class="steps__title">Treatment &amp; counseling</h3>
+          <p class="steps__text">
+            Once we have a clear understanding of your concerns, we begin the
+            treatment phase. A personalized therapy plan is created, setting
+            clear and achievable objectives. Regular progress evaluations ensure
+            that therapy is effective and aligned with your goals, and
+            adjustments are made when necessary to optimize the therapeutic
+            process.
+          </p>
+          <span class="steps__meta">Sessions of about 45 minutes</span>
+        </li>
+
+        <li class="steps__item">
+          <h3 class="steps__title">Review &amp; next steps</h3>
+          <p class="steps__text">
+            Therapy is a journey, and progress is constantly reviewed. Once
+            initial objectives have been met, we assess whether additional
+            sessions are needed, provide tools and strategies for long-term
+            emotional well-being, and ensure that you feel confident in applying
+            what you&rsquo;ve learned in your daily life.
+          </p>
+          <span class="steps__meta">Number of sessions varies per person</span>
+        </li>
+
+      </ol>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       TESTIMONIALS — three quotes taken from the live testimonials page.
+       The full list is on testimonials.html.
+       ==================================================================== -->
+  <section class="section section--testimonials">
+    <div class="container">
+
+      <div class="section__head reveal">
+        <span class="section__eyebrow">What my clients say</span>
+        <h2>First-hand experiences from individuals and families I&rsquo;ve worked with.</h2>
+        <p class="section__lede">
+          Read their stories and see how professional psychological support can
+          make a difference.
+        </p>
+      </div>
+
+      <div class="grid u-grid-3 reveal">
+
+        <figure class="testimonial">
+          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <blockquote class="testimonial__quote">
+            <p>
+              As a mom, we worry about our children. Valeria is a great resource
+              for me to share my concerns and provide expert advice. Her
+              communication with me is amazing (before and after sessions) and
+              equally amazing is how comfortable my children are with her. I
+              would highly recommend Valeria for anyone who needs extra support
+              to care for your children&rsquo;s mental well being.
+            </p>
+          </blockquote>
+          <figcaption class="testimonial__attribution">
+            Jennifer &middot; The Netherlands
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial">
+          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <blockquote class="testimonial__quote">
+            <p>
+              As an expat, I was looking for a therapist that spoke English and
+              understood what it was like to not be Dutch. Valeria fit the bill.
+              She was extremely easy to talk to, made herself readily accessible
+              to me and provided great support when I needed it. She would
+              check-in with me outside of appointments just to make sure I was
+              doing ok, which is not something I am used to but appreciated. My
+              time, and money, was well spent.
+            </p>
+          </blockquote>
+          <figcaption class="testimonial__attribution">
+            Nancy &middot; USA
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial">
+          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <blockquote class="testimonial__quote">
+            <p>
+              With a mix of exercises and conversations you will understand the
+              main problems and how to work on them. She helps you to see from a
+              different perspective, gives you suggestions to have a healthier
+              routine and more. I consider myself an introspective person but
+              analyzing my thoughts with a professional like Valeria it makes a
+              huge difference.
+            </p>
+          </blockquote>
+          <figcaption class="testimonial__attribution">
+            Alberto &middot; Italy
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <p class="u-mt-lg reveal">
+        <a href="testimonials.html">Read all testimonials, in English and Spanish</a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       FAQ — accordion. All questions from the live FAQ page.
+       Panels ship open (no [hidden]); main.js collapses them on load, so the
+       content is still readable with JS disabled.
+       ==================================================================== -->
+  <section class="section section--alt section--faq" id="faq">
+    <div class="container">
+
+      <div class="section__head reveal">
+        <span class="section__eyebrow">FAQ</span>
+        <h2>Frequently asked questions.</h2>
+      </div>
+
+      <div class="accordion reveal" data-accordion>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-1"
+                    data-accordion-trigger>
+              What services do you offer?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-1">
+            <p>
+              I provide a range of psychological services, including individual
+              therapy for anxiety, self-esteem issues, emotional regulation, and
+              personal growth. Additionally, I offer child and adolescent
+              psychology services, behavioral therapy for autism, and support
+              for expats adjusting to new environments. See the
+              <a href="services.html">services page</a> for the full overview.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-2"
+                    data-accordion-trigger>
+              How can I book an appointment?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-2">
+            <p>
+              You can book a free 30-minute intake session through the
+              <a href="contact.html#book">booking calendar</a> on the contact
+              page. Alternatively, you can contact me via email at
+              <a href="mailto:vf.psychology@gmail.com">vf.psychology@gmail.com</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-3"
+                    data-accordion-trigger>
+              Do you offer online therapy sessions?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-3">
+            <p>
+              Yes, I offer online therapy sessions to ensure accessibility for
+              clients who cannot attend in-person sessions or prefer remote
+              consultations.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-4"
+                    data-accordion-trigger>
+              What can I expect during the first session?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-4">
+            <p>
+              The initial session is an opportunity for us to get to know each
+              other. We&rsquo;ll discuss your current challenges, goals for
+              therapy, and any questions you might have. This helps in
+              tailoring a personalized approach to your therapy journey.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-5"
+                    data-accordion-trigger>
+              How long does each therapy session last?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-5">
+            <p>
+              Typically, each therapy session lasts about 45 minutes. However,
+              the duration can be adjusted based on individual needs and
+              treatment plans.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-6"
+                    data-accordion-trigger>
+              How many sessions will I need?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-6">
+            <p>
+              The number of sessions varies depending on individual goals and
+              challenges. Some clients find resolution in a few sessions, while
+              others may benefit from longer-term therapy. We&rsquo;ll regularly
+              review your progress to ensure your needs are being met.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-7"
+                    data-accordion-trigger>
+              What languages do you offer therapy in?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-7">
+            <p>
+              I offer therapy sessions in both English and Spanish to
+              accommodate a diverse clientele. Additionally, I provide sessions
+              in Dutch for children, ensuring they feel comfortable and
+              supported in their native language.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-8"
+                    data-accordion-trigger>
+              How do I know if therapy is right for me?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-8">
+            <p>
+              If you are struggling with stress, anxiety, self-doubt,
+              relationship issues, or any emotional difficulties that affect
+              your daily life, therapy can be a valuable tool to help you gain
+              clarity and develop coping strategies. Our first session will help
+              determine if therapy is the right path for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-9"
+                    data-accordion-trigger>
+              Do you offer therapy for expats?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-9">
+            <p>
+              Yes! As an experienced psychologist working with the expat
+              community, I understand the unique challenges of adjusting to
+              life in a new country. I provide a safe and supportive space to
+              explore issues related to cultural adaptation, loneliness, and
+              identity.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-10"
+                    data-accordion-trigger>
+              How do I get started?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-10">
+            <p>
+              Getting started is easy! You can
+              <a href="contact.html#book">book a free intake session</a>
+              through my website, or send me an email at
+              <a href="mailto:vf.psychology@gmail.com">vf.psychology@gmail.com</a>.
+              I&rsquo;d be happy to answer any questions and help you begin your
+              journey toward mental well-being.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-11"
+                    data-accordion-trigger>
+              What are your fees?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-11">
+            <p>
+              Because therapy is a personal and individualized process, the
+              tariff is discussed during our free intake session. This allows
+              us to explore your situation, the type of support you need, and
+              the best approach for your therapy, ensuring that the pricing is
+              fair and transparent for your specific case. For detailed
+              information about fees please contact me directly at
+              <a href="mailto:vf.psychology@gmail.com">vf.psychology@gmail.com</a>
+              or <a href="contact.html#book">book a free intake</a> where I can
+              answer all your questions.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-12"
+                    data-accordion-trigger>
+              Do you accept insurance?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-12">
+            <p>
+              I am a private psychologist and do not work with insurance
+              companies in the Netherlands. The mental healthcare system is
+              currently overwhelmed, with long waiting lists for insured care.
+              By offering private therapy, I can guarantee immediate
+              availability, so you can receive the support you need without
+              unnecessary delays.
+            </p>
+            <p>
+              My fees are accessible, and some families may be able to finance
+              their sessions through the Personal Budget (PGB) provided by the
+              municipality.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" type="button"
+                    aria-expanded="true" aria-controls="faq-13"
+                    data-accordion-trigger>
+              What is the PGB and how does it work?
+              <svg class="accordion__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-13">
+            <p>
+              The PGB (Persoonsgebonden Budget) is a subsidy that allows
+              individuals with specific care needs to hire professionals of
+              their choice, rather than relying solely on public healthcare
+              services. If you meet the requirements, you can apply for this
+              budget through your municipality and use it to cover the cost of
+              therapy sessions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       FINAL CTA BAND — one ask, nothing competing with it
+       ==================================================================== -->
+  <section class="section section--invert section--cta cta-band">
+    <div class="container cta-band__inner">
+      <h2>Begin your journey toward well-being.</h2>
+      <p class="cta-band__text">
+        The first step toward change is reaching out. Whether you&rsquo;re
+        seeking therapy for yourself or your child, I&rsquo;m here to guide and
+        support you every step of the way.
+      </p>
+      <div class="cta-band__actions btn-row btn-row--center">
+        <a class="btn btn--primary" href="contact.html#book">Book a free consultation</a>
+        <a class="btn btn--secondary" href="mailto:vf.psychology@gmail.com">Email me</a>
+      </div>
+      <p class="cta-band__note">
+        Ready to start? Contact me for more information or schedule your first
+        consultation.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- =========================================================================
+     FOOTER
+     ====================================================================== -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer__grid">
+
+      <div>
+        <a class="logo" href="index.html" aria-label="VF Psychology — home">
+          <img class="logo__brain" src="assets/img/logo-mark.svg" alt="" width="86" height="90" loading="lazy" decoding="async">
+          <span class="logo__text">
+            <span class="logo__mark">VF</span>
+            <span class="logo__sub">Psychology</span>
+          </span>
+        </a>
+        <p class="u-mt-sm u-measure-short">
+          Online psychologist for international clients worldwide. Support for
+          children, adolescents, adults, and their families, in English,
+          Spanish, and Dutch (for children).
+        </p>
+        <div class="footer__socials">
+          <a class="footer__social" href="http://www.linkedin.com/in/valeria-flores-098a24256" rel="noopener" aria-label="VF Psychology on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C21.4 8.75 22 11 22 14v7h-4v-6.2c0-1.5-.03-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.3V21h-4V9Z"/></svg>
+          </a>
+          <a class="footer__social" href="https://www.instagram.com/valeria.flores_psychologist" rel="noopener" aria-label="VF Psychology on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2a3.9 3.9 0 0 1-.9 1.4c-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4a3.9 3.9 0 0 1-1.4-.9 3.9 3.9 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 3.3a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm0 10.7a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4Zm6.8-11a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
+          </a>
+          <a class="footer__social" href="https://www.facebook.com/share/18cxweYnqf/?mibextid=wwXIfr" rel="noopener" aria-label="VF Psychology on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 22v-8.2h2.8l.4-3.3h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.3h2.8V22h3.4Z"/></svg>
+          </a>
+          <a class="footer__social" href="https://twitter.com/vf_psychology" rel="noopener" aria-label="VF Psychology on X (Twitter)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.3l-4.9-6.4L5 21H1.9l7.3-8.3L1.5 3H8l4.4 5.9L17.5 3Zm-1.1 16.2h1.7L7 4.7H5.2l11.2 14.5Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="footer__title">Pages</h2>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="about.html">About Valeria</a></li>
+          <li><a class="footer__link" href="services.html">Services</a></li>
+          <li><a class="footer__link" href="testimonials.html">Testimonials</a></li>
+          <li><a class="footer__link" href="index.html#faq">Frequently asked questions</a></li>
+          <li><a class="footer__link" href="contact.html">Contact and booking</a></li>
+          <li><a class="footer__link" href="privacy.html">Privacy statement</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer__title">Contact information</h2>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="mailto:vf.psychology@gmail.com">vf.psychology@gmail.com</a></li>
+          <li><a class="footer__link" href="tel:+31638136116">06-38136116</a></li>
+          <li><a class="footer__link" href="contact.html#book">Book a free consultation</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- REGISTRATION DETAILS — KvK and VAT still need to be filled in. -->
+    <div class="footer__legal">
+      <p>
+        VF Psychology &middot; KvK 77411528 &middot; VAT [VAT NUMBER]
+        &middot; SPS-NIP member no. 245010 &middot; SKJ registration no. 160029073
+      </p>
+      <p>
+        &copy; 2026 VF Psychology. All rights reserved.
+        <a href="privacy.html">Privacy &amp; GDPR</a>
+      </p>
+      <p>
+        In crisis or in immediate danger? This practice is not an emergency
+        service. Call 112, or contact 113 Suicide Prevention on 0800 0113
+        (free, 24/7) if you&rsquo;re in the Netherlands.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
