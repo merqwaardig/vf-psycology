@@ -1501,4 +1501,10 @@
   .u-grid-2 { --grid-min: 20rem; }
   .u-grid-3 { --grid-min: 16rem; }
   .u-grid-4 { --grid-min: 13rem; }
+
+  /* .u-grid-2 is capped at two columns: with four cards, a third column on
+     wide screens would leave a 3 + 1 orphan instead of a balanced 2 × 2. */
+  @media (min-width: 900px) {
+    .u-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
 }
