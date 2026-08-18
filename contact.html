@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Book an Appointment — VF Psychology</title>
-  <meta name="description" content="Schedule your free 30-minute intake session with VF Psychology, or send a message. Online sessions in English, Spanish, and Dutch (for children).">
+  <meta name="description" content="Book a free 10-minute call with VF Psychology, or send a message. Online sessions in English, Spanish, and Dutch (for children).">
   <link rel="canonical" href="https://vf-psychology.nl/contact.html">
 
   <meta property="og:type" content="website">
@@ -13,11 +13,11 @@
   <meta property="og:locale" content="en_GB">
   <meta property="og:url" content="https://vf-psychology.nl/contact.html">
   <meta property="og:title" content="Book an Appointment — VF Psychology">
-  <meta property="og:description" content="Schedule your free 30-minute intake session, or send a message. Online sessions in English and Spanish.">
+  <meta property="og:description" content="Book a free 10-minute call, or send a message. Online sessions in English and Spanish.">
   <meta property="og:image" content="https://vf-psychology.nl/assets/img/og-default.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Book an Appointment — VF Psychology">
-  <meta name="twitter:description" content="Schedule your free 30-minute intake session, or send a message.">
+  <meta name="twitter:description" content="Book a free 10-minute call, or send a message.">
   <meta name="twitter:image" content="https://vf-psychology.nl/assets/img/og-default.jpg">
 
   <meta name="theme-color" content="#FDFBF8">
@@ -76,8 +76,8 @@
       </ul>
 
       <a class="btn btn--primary header__cta" href="contact.html#book">
-        <span class="header__cta-short">Book intake</span>
-        <span class="header__cta-long">Book a free consultation</span>
+        <span class="header__cta-short">Book a call</span>
+        <span class="header__cta-long">Book a free 10-minute call</span>
       </a>
 
       <button class="nav__toggle" type="button"
@@ -108,8 +108,8 @@
       </nav>
       <h1 class="page-header__title">Book an appointment.</h1>
       <p class="page-header__lede">
-        Schedule your free intake session in the calendar below, or send a
-        message using the form and I&rsquo;ll get back to you.
+        Book a free 10-minute call using the form below, or just send a
+        message and I&rsquo;ll get back to you.
       </p>
     </div>
   </section>
@@ -124,13 +124,12 @@
     <div class="container container--narrow">
 
       <div class="section__head reveal">
-        <span class="section__eyebrow">Book your intake</span>
-        <h2>Free 30-minute intake session</h2>
+        <span class="section__eyebrow">Book your call</span>
+        <h2>Free 10-minute call</h2>
         <p class="section__lede">
-          The initial session is an opportunity for us to get to know each
-          other. We&rsquo;ll discuss your current challenges, goals for therapy,
-          and any questions you might have. This helps in tailoring a
-          personalized approach to your therapy journey.
+          A short, no-obligation call to get to know each other. We&rsquo;ll
+          briefly discuss what brings you here and any questions you might
+          have, and decide together whether an intake is the right next step.
         </p>
       </div>
 
@@ -151,15 +150,14 @@
 
       <!-- FALLBACK while the calendar is off — delete when re-enabling Calendly -->
       <div class="callout callout--accent reveal">
-        <h3 class="callout__title">Book your free intake</h3>
+        <h3 class="callout__title">Book your free 10-minute call</h3>
         <p class="callout__text">
-          Send me an email or use the form below and I&rsquo;ll get back to you
-          with a few available times for your free 30-minute intake.
+          Use the form below, tell me briefly what brings you here, and
+          I&rsquo;ll get back to you with a few available times for your free
+          10-minute call.
         </p>
         <p class="u-mt-md">
-          <a class="btn btn--primary" href="mailto:vf.psychology@gmail.com?subject=Free%2030-minute%20intake">
-            Email me to book an intake
-          </a>
+          <a class="btn btn--primary" href="#contact-form">Go to the form</a>
         </p>
       </div>
       <!-- END BOOKING EMBED -->
@@ -176,17 +174,17 @@
        Hidden fields configure the subject, honeypot, and thank-you page.
        See README.md § Wiring up the form.
        ==================================================================== -->
-  <section class="section section--alt section--contact">
+  <section class="section section--alt section--contact" id="contact-form">
     <div class="container split">
 
       <div class="reveal">
         <div class="section__head">
-          <span class="section__eyebrow">Or write to me</span>
-          <h2>Send a message</h2>
+          <span class="section__eyebrow">Contact form</span>
+          <h2>Book a call or send a message</h2>
           <p class="section__lede">
-            Contact me for more information or to schedule your first
-            consultation. I&rsquo;d be happy to answer any questions and help
-            you begin your journey toward mental well-being.
+            Let me know whether you&rsquo;d like a free 10-minute call or just
+            have a question. I&rsquo;d be happy to help you begin your journey
+            toward mental well-being.
           </p>
         </div>
 
@@ -224,9 +222,21 @@
           </div>
 
           <div class="form__field">
+            <label class="form__label" for="request">
+              What would you like?
+            </label>
+            <select class="form__select" id="request" name="request"
+                    aria-describedby="request-error">
+              <option value="free-10-minute-call">A free 10-minute call</option>
+              <option value="question">A question or more information</option>
+            </select>
+            <span class="form__error" id="request-error" role="alert"></span>
+          </div>
+
+          <div class="form__field">
             <label class="form__label" for="message">
               What brings you here?
-              <span class="form__hint">A few lines is plenty.</span>
+              <span class="form__hint">A few lines is plenty. If you&rsquo;d like a call, mention when you&rsquo;re usually available.</span>
             </label>
             <textarea class="form__textarea" id="message" name="message"
                       rows="6" minlength="10" required
@@ -267,7 +277,7 @@
           <p class="u-mt-sm u-xsmall u-muted">
             Please don&rsquo;t put sensitive medical details in this form. Email
             isn&rsquo;t a secure channel, and we can cover all of it properly
-            during the intake.
+            during the call.
           </p>
 
         </form>
@@ -419,7 +429,7 @@
         <ul class="footer__list">
           <li><a class="footer__link" href="mailto:vf.psychology@gmail.com">vf.psychology@gmail.com</a></li>
           <li><a class="footer__link" href="tel:+31638136116">06-38136116</a></li>
-          <li><a class="footer__link" href="contact.html#book">Book a free consultation</a></li>
+          <li><a class="footer__link" href="contact.html#book">Book a free 10-minute call</a></li>
         </ul>
       </div>
 

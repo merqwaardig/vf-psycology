@@ -14,7 +14,7 @@ Design, structure, CSS and JS are unchanged. What changed:
   245010, SKJ no. 160029073, founded February 2020, e-mail
   vf.psychology@gmail.com, phone 06-38136116, social links.
 - Booking: the Calendly widget from the live site is embedded on
-  `contact.html#book` (free 30-minute intake). No published rates — fees are
+  `contact.html#book` (was: free 30-minute intake — the site now offers a free 10-minute call via the form). No published rates — fees are
   discussed during the intake, exactly as on the live site.
 - New page `testimonials.html` with all 14 testimonials (EN + ES); three of
   them also appear on the homepage. Added to nav, footer and sitemap.
