@@ -14,8 +14,8 @@ how to do the common tasks. Technical detail on the CSS/JS lives in
 
 ## 0. Session log — 28 August 2026 (all deployed to the Vercel preview)
 
-- **Contact form works**: posts to FormSubmit → vf.psychology@gmail.com,
-  honeypot, thank-you page. ⚠️ One-time activation e-mail still to click.
+- **Contact form works and is ACTIVATED**: posts to FormSubmit →
+  vf.psychology@gmail.com, honeypot, thank-you page. Delivery confirmed.
 - **Booking changed to a free 10-minute call** (was: 30-min intake); the
   callout links to the form, which has a "What would you like?" select.
 - **Services**: nav dropdown + seven per-service pages (incl. the brand-new
@@ -167,10 +167,9 @@ message via the VF Psychology website", visitor's address as reply-to).
 Honeypot field `_honey` filters bots; FormSubmit's captcha page is off.
 After sending, the visitor lands on `thank-you.html`.
 
-⚠️ **One-time activation still to do**: the first submission makes FormSubmit
-send an activation e-mail to vf.psychology@gmail.com. Someone must click the
-link in it. Until then nothing is delivered. → Submit the form once on the
-live URL, then check that inbox (and spam).
+✅ **Activated** (28 Aug 2026) — delivery to vf.psychology@gmail.com is
+confirmed working. (If the destination address ever changes, FormSubmit will
+ask for a new activation click.)
 
 ⚠️ The redirect URL is hard-coded in a hidden field on `contact.html`:
 `_next = https://vf-psycology.vercel.app/thank-you.html`. **Change it when the
@@ -208,9 +207,8 @@ Details for each item are in the sections above (§ 4) or behind the grep
 hints. Order within each block = priority.
 
 ### A. Before launch — content & legal
-- [ ] **Activate FormSubmit** — submit the form once on the live URL, click
-      the activation link in vf.psychology@gmail.com. Until then NOTHING is
-      delivered. ← most important remaining step
+- [x] ~~Activate FormSubmit~~ — activated 28 Aug 2026; messages are being
+      delivered to vf.psychology@gmail.com
 - [ ] **Privacy statement** — fill every `[BRACKETED]` value in
       `privacy.html`, have it reviewed, remove the draft banner
 - [ ] **City** — `"addressLocality": "[CITY]"` in the JSON-LD on `index.html`
