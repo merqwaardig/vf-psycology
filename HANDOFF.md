@@ -173,8 +173,7 @@ project, point DNS there, then do the domain checklist below.
 ### A. Content & legal — needed before the site can replace the old one
 1. **Activate FormSubmit** — one test submission + click the activation link
    in vf.psychology@gmail.com. Without this the form goes nowhere.
-2. **VAT number** — footer on all 7 pages still says `VAT [VAT NUMBER]`.
-   Delete it if the practice is VAT-exempt/not registered.
+2. ~~VAT number~~ — done: footer shows BTW-id NL003190452B42 (28 pages).
 3. **Privacy statement** — `privacy.html` is a scaffold with `[BRACKETED]`
    placeholders (address, processors: video platform, records system, e-mail
    host; retention periods; complaints procedure). Needs Valeria's real
@@ -222,9 +221,10 @@ project, point DNS there, then do the domain checklist below.
     commented `ANALYTICS PLACEHOLDER` block in the `<head>` of every page
     (currently only on `index.html`; copy it to the other 6). Load GA4 and
     anything else through GTM, not as separate scripts.
-13. **Google Analytics 4** — create the property, add the GA4 tag in GTM.
-    GDPR: either run GA4 without cookies / with consent mode, or add a
-    consent banner before firing it. Nothing is loaded until this is done.
+13. ~~Google Analytics 4~~ — done: G-N6305CKK46 is live on all 28 pages,
+    in Consent Mode with storage DENIED by default (cookieless, modeled
+    data). To measure with cookies, add a consent banner that calls
+    gtag('consent','update',{analytics_storage:'granted'}) on accept.
 14. **Google Search Console** — verify `vf-psychology.nl` (DNS TXT record via
     Cloud86 is easiest), submit `https://vf-psychology.nl/sitemap.xml`,
     request indexing of the 6 public pages, and keep an eye on Core Web

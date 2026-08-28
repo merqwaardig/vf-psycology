@@ -44,21 +44,23 @@
        deliberately — anything larger belongs in main.js. -->
   <script>document.documentElement.classList.add('js');</script>
 
-  <!-- ===================================================================
-       ANALYTICS PLACEHOLDER — GA4 / GTM
-       Paste the snippet here. Nothing else on the site depends on it.
-       Note: under GDPR you need consent before setting analytics cookies.
-       Either configure GA4 in cookieless mode or gate this behind a
-       consent banner before going live.
-       ===================================================================
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- GOOGLE ANALYTICS 4 — stream vf-psychology.nl (G-N6305CKK46).
+       GDPR note: analytics cookies formally require prior consent in the EU.
+       Consent Mode below starts with storage DENIED, so GA runs cookieless
+       (modeled data) until a consent banner (still to add) grants it. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6305CKK46"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied'
+    });
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-N6305CKK46');
   </script>
-  -->
 
   <!-- STRUCTURED DATA — Person + ProfessionalService + FAQPage.
        Replace every [BRACKETED] value before launch. -->
@@ -1079,7 +1081,7 @@
     <!-- REGISTRATION DETAILS — KvK and VAT still need to be filled in. -->
     <div class="footer__legal">
       <p>
-        VF Psychology &middot; KvK 77411528 &middot; VAT [VAT NUMBER]
+        VF Psychology &middot; KvK 77411528 &middot; BTW-id NL003190452B42
         &middot; SPS-NIP member no. 245010 &middot; SKJ registration no. 160029073
       </p>
       <p>
