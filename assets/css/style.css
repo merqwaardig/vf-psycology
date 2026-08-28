@@ -980,9 +980,28 @@
      initFaqTrim in main.js — without JS the full list is simply shown). */
   .accordion__more { margin-top: var(--sp-md); }
 
-  /* The FAQ band trades its sand background for a calm pastel blue. */
+  /* The FAQ band trades its sand background for a calm pastel blue.
+     The items sit on a lighter tint of the same blue — no white boxes —
+     with blue-leaning borders and hover/expanded states to match. */
   .section--faq { background-color: var(--c-pastel-blue); }
-  .section--faq .accordion__item { background-color: var(--bg-page); }
+
+  .section--faq .accordion__item {
+    background-color: #EDF4F8;
+    border-color: #C3D6E2;
+  }
+
+  .section--faq .accordion__trigger:hover { color: var(--c-pastel-blue-ink); }
+
+  .section--faq .accordion__trigger[aria-expanded="true"] { color: var(--c-pastel-blue-ink); }
+
+  .section--faq .accordion__icon { color: var(--c-pastel-blue-ink); }
+
+  .section--faq .accordion__more {
+    border-color: var(--c-pastel-blue-ink);
+    color: var(--c-pastel-blue-ink);
+  }
+
+  .section--faq .accordion__more:hover { background-color: #EDF4F8; }
 
   /* ---------------------------------------------------------------------
      RECOGNITION ("Does this sound familiar?")
