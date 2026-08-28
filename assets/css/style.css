@@ -909,10 +909,12 @@
     .hero .section__eyebrow { order: 1; }
     .hero__title            { order: 2; }
     .hero__figure           { order: 3; margin-block: var(--sp-md) var(--sp-2xs); }
-    .hero__subtitle         { order: 4; }
-    .hero__actions          { order: 5; }
-    .hero__note             { order: 6; }
-    .hero__trust            { order: 7; }
+    /* Credentials right under the portrait, so face and qualifications
+       read as one unit — the subtitle and CTAs follow. */
+    .hero__trust            { order: 4; margin-top: var(--sp-xs); padding-top: 0; border-top: 0; }
+    .hero__subtitle         { order: 5; }
+    .hero__actions          { order: 6; }
+    .hero__note             { order: 7; }
 
     .hero__portrait {
       aspect-ratio: 3 / 2;
