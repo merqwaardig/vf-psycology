@@ -879,8 +879,6 @@
 
   /* Portrait sits in a soft frame, offset slightly — asymmetry without
      resorting to a full-bleed image with text dumped on top.           */
-  /* Mobile order is source order: headline and CTA first, portrait after.
-     The visitor should read the promise before they meet the face.     */
   .hero__figure {
     position: relative;
     margin: 0;
@@ -892,6 +890,30 @@
     object-fit: cover;
     border-radius: var(--r-lg);
     box-shadow: var(--sh-lg);
+  }
+
+  /* Mobile: the portrait must be inside the first screen, like on desktop
+     where it sits beside the headline. The figure is a sibling of the
+     content block, so the content wrapper is flattened (display: contents)
+     and everything is reordered on the hero grid: title first, portrait
+     directly under it in a shorter landscape crop, then the rest. */
+  @media (max-width: 899.98px) {
+    .hero .split { gap: 0; }
+    .hero__content { display: contents; }
+
+    .hero .section__eyebrow { order: 1; }
+    .hero__title            { order: 2; }
+    .hero__figure           { order: 3; margin-block: var(--sp-md) var(--sp-2xs); }
+    .hero__subtitle         { order: 4; }
+    .hero__actions          { order: 5; }
+    .hero__note             { order: 6; }
+    .hero__trust            { order: 7; }
+
+    .hero__portrait {
+      aspect-ratio: 3 / 2;
+      /* The source is a 4:5 portrait; keep the face in this landscape crop. */
+      object-position: 50% 32%;
+    }
   }
 
   .hero__caption {
