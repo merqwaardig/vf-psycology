@@ -39,8 +39,8 @@ how to do the common tasks. Technical detail on the CSS/JS lives in
 - **GA4 live** (G-N6305CKK46) on all 28 pages, Consent Mode storage=denied
   (cookieless until a consent banner is added).
 - **Footer**: BTW-id NL003190452B42 (VAT placeholder gone); TikTok
-  @nina_psych added to socials + JSON-LD sameAs (⚠️ handle unverified —
-  doesn't match Valeria's other handles).
+  @nina_psych added to socials + JSON-LD sameAs (confirmed: this is the
+  practice's account).
 - **Typography reviewed** (Lato / Source Sans Pro previews) — client chose
   to keep Fraunces + Inter.
 
@@ -221,8 +221,7 @@ hints. Order within each block = priority.
       from the client, then ~30 min work
 - [ ] **Spanish review by Valeria** — /es/ is Claude's draft (Latin American
       Spanish); native check before promoting the ES link
-- [ ] **Verify TikTok handle** — footer links to @nina_psych; is that really
-      the practice's account?
+- [x] ~~TikTok handle~~ — confirmed: @nina_psych is the practice's account
 - [x] ~~VAT~~ — BTW-id NL003190452B42 in the footer (all 28 pages)
 
 ### B. Assets
