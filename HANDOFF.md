@@ -81,7 +81,7 @@ block does it.
 | Languages | English & Spanish; Dutch for children | hero, FAQ, contact form |
 | Socials | LinkedIn, Instagram, Facebook, X (real URLs) | footer, JSON-LD |
 | Free call | 10 minutes, booked via the contact form | all CTAs |
-| Fees | not published; discussed during the free call; no insurance; PGB possible | services, FAQ |
+| Fees | not published; discussed during the free call; no insurance. PGB mentions temporarily commented out (Aug 2026) on index.html + services.html — search "PGB" to restore | services, FAQ |
 | Calendly | https://calendly.com/vf-psychology — embedded on the old site, **switched off here** (commented out in contact.html) | contact.html |
 
 ---
