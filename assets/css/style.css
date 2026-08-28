@@ -687,6 +687,61 @@
     font-weight: var(--fw-semi);
   }
 
+  /* Services dropdown. Mobile: the sub-list sits inline in the open panel,
+     indented, toggled by the caret button. Desktop: a floating panel under
+     the Services item, opened by hover, keyboard focus, or the caret. */
+  .nav__item--sub { display: flex; flex-wrap: wrap; align-items: center; }
+
+  .nav__sub-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tap-min);
+    height: var(--tap-min);
+    border-radius: var(--r-sm);
+    color: var(--text-heading);
+    cursor: pointer;
+  }
+
+  .nav__sub-toggle svg {
+    width: 1rem;
+    height: 1rem;
+    transition: transform var(--dur-fast) var(--ease-out);
+  }
+
+  .nav__sub-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+
+  .nav__sub {
+    display: none;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0 0 0 var(--sp-sm);
+    list-style: none;
+  }
+
+  .nav__item--sub.is-open .nav__sub { display: block; }
+
+  .nav__sub-link {
+    display: flex;
+    align-items: center;
+    min-height: var(--tap-min);
+    color: var(--text-body);
+    font-size: var(--fs-sm);
+    text-decoration: none;
+  }
+
+  .nav__sub-link:hover { color: var(--c-accent-700); }
+
+  .nav__sub-link[aria-current="page"] {
+    color: var(--c-accent-700);
+    font-weight: var(--fw-semi);
+  }
+
+  .nav__sub-link--all {
+    font-weight: var(--fw-medium);
+    color: var(--c-accent-700);
+  }
+
   .nav__toggle {
     display: inline-flex;
     align-items: center;
@@ -734,6 +789,35 @@
 
     .header__cta-short { display: none; }
     .header__cta-long  { display: inline; }
+
+    .nav__item--sub { position: relative; flex-wrap: nowrap; gap: 0; }
+
+    .nav__sub-toggle { width: 1.5rem; height: var(--tap-min); }
+
+    .nav__sub {
+      position: absolute;
+      top: 100%;
+      left: calc(-1 * var(--sp-sm));
+      z-index: var(--z-nav-panel);
+      min-width: 15rem;
+      padding: var(--sp-2xs) var(--sp-sm);
+      background-color: var(--bg-page);
+      border: var(--bw-hair) solid var(--border-subtle);
+      border-radius: var(--r-sm);
+      box-shadow: var(--sh-md);
+    }
+
+    .nav__item--sub:hover .nav__sub,
+    .nav__item--sub:focus-within .nav__sub,
+    .nav__item--sub.is-open .nav__sub { display: block; }
+
+    .nav__sub-link { min-height: 2.25rem; }
+
+    .nav__sub-link--all {
+      margin-top: var(--sp-3xs);
+      border-top: var(--bw-hair) solid var(--border-subtle);
+      padding-top: var(--sp-3xs);
+    }
   }
 
   /* ---------------------------------------------------------------------
@@ -882,6 +966,51 @@
   .card__title { margin-bottom: var(--sp-2xs); }
 
   .card__text { color: var(--text-muted); }
+
+  /* Overview cards on services.html link through to the detail pages. */
+  .card__title-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .card__title-link:hover { color: var(--c-accent-700); }
+
+  .card__more {
+    font-weight: var(--fw-medium);
+    color: var(--c-accent-700);
+    text-decoration: none;
+  }
+
+  .card__more:hover { text-decoration: underline; }
+
+  /* Long-form copy on the service detail pages — same voice as the cards,
+     but on the page background instead of inside a card. */
+  .page-copy__text { color: var(--text-muted); }
+
+  .page-copy__list {
+    margin-top: var(--sp-sm);
+    padding-left: 0;
+    list-style: none;
+    color: var(--text-muted);
+  }
+
+  .page-copy__list li {
+    position: relative;
+    padding-left: var(--sp-md);
+  }
+
+  .page-copy__list li + li { margin-top: var(--sp-3xs); }
+
+  .page-copy__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: var(--sp-2xs);
+    height: var(--bw-thick);
+    background-color: var(--c-accent-500);
+    border-radius: var(--r-pill);
+  }
 
   .card__list {
     margin-top: var(--sp-sm);

@@ -41,7 +41,10 @@ index.html          Home: hero, "does this sound familiar", mission & approach,
                     how I can help, about preview, therapeutic process,
                     3 testimonials, FAQ (13 questions), CTA, footer
 about.html          About Valeria, credentials, VF-Psychology, experience, approach
-services.html       6 service blocks + fees & reimbursement (PGB)
+services.html       Service overview (7 cards) + fees & reimbursement (PGB)
+individual-therapy.html, child-psychology.html, autism-therapy.html,
+couple-counseling.html, expat-support.html, parent-guidance.html,
+pregnancy-postpartum.html   One page per service (nav dropdown + overview cards link here)
 testimonials.html   All 14 testimonials (English + Spanish)
 contact.html        Booking block (#book), contact form (#contact-form), details
 thank-you.html      Landing page after the form is sent (noindex)
@@ -84,6 +87,15 @@ block does it.
 ---
 
 ## 4. How things work
+
+### Services dropdown & detail pages
+"Services" in the nav is a dropdown (hover/focus on desktop, caret button on
+mobile) listing the seven service pages plus "All services & fees". Each
+service has its own page; the cards on services.html are short teasers that
+link through. Service-page body text uses the .page-copy__* classes; the
+dropdown is .nav__item--sub / .nav__sub in the CSS and initNavSub() in main.js.
+Pregnancy, Postpartum & Beyond is new copy supplied by the client (Aug 2026);
+the other six pages carry the live-site copy.
 
 ### Booking / CTAs
 Every "Book a free 10-minute call" button on the site links to

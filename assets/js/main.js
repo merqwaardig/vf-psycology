@@ -78,6 +78,40 @@
     }
   }
 
+
+  /* --------------------------------------------------------------------------
+     2b. initNavSub
+     The Services dropdown. Desktop opens on hover/focus via CSS alone; the
+     caret button covers touch and keyboard, and is the only control on
+     mobile. Closes on Escape and on clicks outside the item.
+     -------------------------------------------------------------------------- */
+  function initNavSub() {
+    var item = document.querySelector('[data-nav-sub]');
+    if (!item) return;
+
+    var button = item.querySelector('.nav__sub-toggle');
+
+    function setOpen(isOpen) {
+      item.classList.toggle('is-open', isOpen);
+      button.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    button.addEventListener('click', function () {
+      setOpen(!item.classList.contains('is-open'));
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!item.contains(event.target)) setOpen(false);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') return;
+      if (!item.classList.contains('is-open')) return;
+      setOpen(false);
+      button.focus();
+    });
+  }
+
   /* ---------------------------------------------------------------------------
      3. initStickyHeader
      Adds .is-stuck once the page has scrolled, which draws the header's
@@ -276,6 +310,7 @@
      -------------------------------------------------------------------------- */
   markJsAvailable();
   initNavToggle();
+  initNavSub();
   initStickyHeader();
   initAccordion();
   initFormValidation();

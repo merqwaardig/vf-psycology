@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Services — VF Psychology</title>
-  <meta name="description" content="Individual therapy, child psychology, couple counseling, expat mental health support and guidance for parents and families. Personalized, confidential online care in English and Spanish.">
+  <meta name="description" content="Individual therapy, child psychology, couple counseling, expat mental health support, guidance for parents and families, and pregnancy and postpartum support. Personalized, confidential online care in English and Spanish.">
   <link rel="canonical" href="https://vf-psychology.nl/services.html">
 
   <meta property="og:type" content="website">
@@ -36,7 +36,7 @@
     "@id": "https://vf-psychology.nl/#practice",
     "name": "VF Psychology",
     "url": "https://vf-psychology.nl/services.html",
-    "description": "Online psychological services in English and Spanish: individual therapy, child and adolescent psychology, behavioral therapy for autism, couple counseling, expat mental health support and guidance for parents and families.",
+    "description": "Online psychological services in English and Spanish: individual therapy, child and adolescent psychology, behavioral therapy for autism, couple counseling, expat mental health support, guidance for parents and families, and pregnancy and postpartum support.",
     "email": "vf.psychology@gmail.com",
     "telephone": "+31638136116",
     "availableLanguage": ["English", "Spanish", "Dutch"],
@@ -51,7 +51,8 @@
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Behavioral therapy for autism" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Couple counseling" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Expat mental health support" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guidance for parents and families" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guidance for parents and families" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pregnancy, postpartum and maternal mental health support" } }
       ]
     }
   }
@@ -80,7 +81,22 @@
       <ul class="nav__list" id="nav-panel" data-nav-panel>
         <li><a class="nav__link" href="index.html">Home</a></li>
         <li><a class="nav__link" href="about.html">About</a></li>
-        <li><a class="nav__link" href="services.html" aria-current="page">Services</a></li>
+        <li class="nav__item--sub" data-nav-sub>
+          <a class="nav__link" href="services.html" aria-current="page">Services</a>
+          <button class="nav__sub-toggle" type="button" aria-expanded="false" aria-label="Show services menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 15.1 5.6 8.7 7 7.3l5 5 5-5 1.4 1.4-6.4 6.4Z"/></svg>
+          </button>
+          <ul class="nav__sub">
+          <li><a class="nav__sub-link" href="individual-therapy.html">Individual therapy</a></li>
+          <li><a class="nav__sub-link" href="child-psychology.html">Child psychology</a></li>
+          <li><a class="nav__sub-link" href="autism-therapy.html">Behavioral therapy for autism</a></li>
+          <li><a class="nav__sub-link" href="couple-counseling.html">Couple counseling</a></li>
+          <li><a class="nav__sub-link" href="expat-support.html">Expat mental health support</a></li>
+          <li><a class="nav__sub-link" href="parent-guidance.html">Guidance for parents & families</a></li>
+          <li><a class="nav__sub-link" href="pregnancy-postpartum.html">Pregnancy, Postpartum &amp; Beyond</a></li>
+          <li><a class="nav__sub-link nav__sub-link--all" href="services.html">All services &amp; fees</a></li>
+          </ul>
+        </li>
         <li><a class="nav__link" href="testimonials.html">Testimonials</a></li>
         <li><a class="nav__link" href="contact.html">Contact</a></li>
       </ul>
@@ -134,7 +150,7 @@
 
       <div class="section__head reveal">
         <span class="section__eyebrow">How I can help</span>
-        <h2>Six ways people work with me.</h2>
+        <h2>Seven ways people work with me.</h2>
       </div>
 
       <div class="grid u-grid-2 grid--wide reveal">
@@ -144,30 +160,9 @@
           <span class="card__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.5-8 5.5V22h16v-2.5c0-3-3.6-5.5-8-5.5Z"/></svg>
           </span>
-          <h3 class="card__title">Individual therapy</h3>
-          <p class="card__text">
-            <em>Do you often feel overwhelmed by your emotions? Struggling with
-            stress, anxiety, or self-doubt? You&rsquo;re not alone, and support
-            is available. Let&rsquo;s work together to help you regain balance
-            and confidence.</em>
-          </p>
-          <p class="card__text u-mt-sm">
-            <strong>Personalized support.</strong> Life can be overwhelming at
-            times, and seeking therapy is a powerful step toward self-discovery
-            and healing. I offer individual therapy sessions designed to help
-            you:
-          </p>
-          <ul class="card__list">
-            <li>Manage anxiety, depression, and stress</li>
-            <li>Improve self-esteem and emotional regulation</li>
-            <li>Develop coping strategies for personal challenges</li>
-            <li>Strengthen relationships and communication skills</li>
-            <li>Navigate life transitions, career challenges, and personal growth</li>
-          </ul>
-          <p class="card__text u-mt-sm">
-            Each session is tailored to your needs, creating a safe,
-            non-judgmental space to explore your thoughts and emotions.
-          </p>
+          <h3 class="card__title"><a class="card__title-link" href="individual-therapy.html">Individual therapy</a></h3>
+          <p class="card__text"><em>Do you often feel overwhelmed by your emotions? Struggling with stress, anxiety, or self-doubt? You&rsquo;re not alone, and support is available. Let&rsquo;s work together to help you regain balance and confidence.</em></p>
+          <p class="card__text u-mt-sm"><a class="card__more" href="individual-therapy.html">Read more about individual therapy &rarr;</a></p>
         </article>
 
         <!-- SERVICE 2 — Child psychology -->
@@ -175,44 +170,9 @@
           <span class="card__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false"><path d="M12 3 2 8l10 5 8-4v6h2V8L12 3ZM6 12.2V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.8l-6 3-6-3Z"/></svg>
           </span>
-          <h3 class="card__title">Child psychology</h3>
-          <p class="card__text">
-            <em>Is your child struggling with emotional regulation, anxiety, or
-            behavioral challenges? Are you looking for the right guidance to
-            support them? Specialized help is available to bring clarity and
-            balance to your family.</em>
-          </p>
-          <p class="card__text u-mt-sm">
-            <strong>Behavioral training for children.</strong> Behavioral
-            training helps children develop essential skills to manage
-            emotions, improve social interactions, and navigate daily
-            challenges. This approach is especially beneficial for children
-            experiencing impulsivity, emotional outbursts, or difficulties with
-            routines and structure. Through structured techniques, I help
-            children strengthen self-regulation and coping mechanisms, develop
-            positive behaviors and emotional control, and improve focus, social
-            skills, and daily habits.
-          </p>
-          <p class="card__text u-mt-sm">
-            <strong>Solution-Focused Therapy (SFT).</strong> This goal-oriented
-            approach helps children and adolescents find practical solutions to
-            their challenges rather than focusing solely on problems. By
-            emphasizing strengths, resilience, and positive change, SFT
-            empowers young individuals to take control of their emotional
-            well-being: enhancing self-confidence and problem-solving skills,
-            managing stress, anxiety, and peer relationships, and encouraging a
-            positive mindset and personal growth.
-          </p>
-          <p class="card__text u-mt-sm">
-            <strong>Cognitive Behavioral Therapy (CBT).</strong> CBT is one of
-            the most effective approaches for treating anxiety, depression, and
-            behavioral challenges in children and adolescents. This structured
-            therapy helps young individuals understand how thoughts, feelings,
-            and behaviors are connected and how they can make positive changes:
-            managing anxiety, fears, and negative thinking patterns, improving
-            emotional regulation and resilience, and developing healthy coping
-            strategies for stress and social interactions.
-          </p>
+          <h3 class="card__title"><a class="card__title-link" href="child-psychology.html">Child psychology</a></h3>
+          <p class="card__text"><em>Is your child struggling with emotional regulation, anxiety, or behavioral challenges? Are you looking for the right guidance to support them? Specialized help is available to bring clarity and balance to your family.</em></p>
+          <p class="card__text u-mt-sm"><a class="card__more" href="child-psychology.html">Read more about child psychology &rarr;</a></p>
         </article>
 
         <!-- SERVICE 3 — Behavioral therapy for autism -->
@@ -220,20 +180,9 @@
           <span class="card__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false"><path d="M12 3a7 7 0 0 0-4 12.7V18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3A7 7 0 0 0 12 3Zm-3 17h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1Z"/></svg>
           </span>
-          <h3 class="card__title">Behavioral therapy for autism</h3>
-          <p class="card__text">
-            <em>Does your child need structured support to develop emotional
-            regulation, communication, and social skills?</em>
-          </p>
-          <p class="card__text u-mt-sm">
-            Tailored interventions to promote positive development and
-            well-being. Alongside my private practice, I collaborate with an
-            autism center, where I provide behavioral therapy to children with
-            autism. In this work, I take a holistic approach that integrates
-            biological, psychological, and social factors, supporting each
-            child&rsquo;s development and emotional well-being in a
-            comprehensive and meaningful way.
-          </p>
+          <h3 class="card__title"><a class="card__title-link" href="autism-therapy.html">Behavioral therapy for autism</a></h3>
+          <p class="card__text"><em>Does your child need structured support to develop emotional regulation, communication, and social skills?</em></p>
+          <p class="card__text u-mt-sm"><a class="card__more" href="autism-therapy.html">Read more about behavioral therapy for autism &rarr;</a></p>
         </article>
 
         <!-- SERVICE 4 — Couple counseling -->
@@ -241,28 +190,9 @@
           <span class="card__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s-7.5-4.6-9.3-9A5.3 5.3 0 0 1 12 6.6a5.3 5.3 0 0 1 9.3 5.4C19.5 16.4 12 21 12 21Z"/></svg>
           </span>
-          <h3 class="card__title">Couple counseling</h3>
-          <p class="card__text">
-            <em>Are you and your partner struggling to communicate? Do small
-            disagreements turn into big conflicts? Are you feeling
-            disconnected, unheard, or emotionally distant in your relationship?
-            Do you want to rebuild trust, intimacy, and understanding?</em>
-          </p>
-          <p class="card__text u-mt-sm">
-            <strong>Rebuild connection &middot; Improve communication &middot;
-            Strengthen your relationship.</strong> Couple therapy provides a
-            safe, neutral space to explore your relationship dynamics,
-            understand each other&rsquo;s needs, and develop healthier ways to
-            connect. My approach is tailored to each couple&rsquo;s unique
-            situation, helping you:
-          </p>
-          <ul class="card__list">
-            <li><strong>Improve communication</strong> &ndash; Learn to express yourself openly and listen with empathy.</li>
-            <li><strong>Resolve conflicts effectively</strong> &ndash; Turn arguments into constructive conversations.</li>
-            <li><strong>Rebuild trust</strong> &ndash; Heal wounds caused by past experiences or misunderstandings.</li>
-            <li><strong>Deepen emotional connection</strong> &ndash; Strengthen intimacy, affection, and appreciation.</li>
-            <li><strong>Navigate life transitions together</strong> &ndash; Adjust to major changes like parenthood, relocation, or career shifts.</li>
-          </ul>
+          <h3 class="card__title"><a class="card__title-link" href="couple-counseling.html">Couple counseling</a></h3>
+          <p class="card__text"><em>Are you and your partner struggling to communicate? Do small disagreements turn into big conflicts? Are you feeling disconnected, unheard, or emotionally distant in your relationship? Do you want to rebuild trust, intimacy, and understanding?</em></p>
+          <p class="card__text u-mt-sm"><a class="card__more" href="couple-counseling.html">Read more about couple counseling &rarr;</a></p>
         </article>
 
         <!-- SERVICE 5 — Expat mental health support -->
@@ -270,30 +200,9 @@
           <span class="card__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3a15.4 15.4 0 0 0-1.2-5.4A8 8 0 0 1 18.9 11ZM12 4.2c.8 1.2 1.5 3.5 1.7 6.8h-3.4c.2-3.3.9-5.6 1.7-6.8ZM5.1 11a8 8 0 0 1 4.2-5.4A15.4 15.4 0 0 0 8.1 11h-3Zm0 2h3a15.4 15.4 0 0 0 1.2 5.4A8 8 0 0 1 5.1 13Zm6.9 6.8c-.8-1.2-1.5-3.5-1.7-6.8h3.4c-.2 3.3-.9 5.6-1.7 6.8Zm2.7-1.4a15.4 15.4 0 0 0 1.2-5.4h3a8 8 0 0 1-4.2 5.4Z"/></svg>
           </span>
-          <h3 class="card__title">Expat mental health support</h3>
-          <p class="card__text">
-            <em>Are you finding it hard to adjust to life in a new country? Do
-            feelings of loneliness, uncertainty, or culture shock make everyday
-            life more difficult? Let&rsquo;s navigate this journey
-            together.</em>
-          </p>
-          <p class="card__text u-mt-sm">
-            <strong>Helping you adapt, thrive, and feel at home.</strong>
-            Relocating to a new country is an exciting yet challenging
-            experience. As an expat myself, I understand the emotional and
-            psychological adjustments that come with cultural transitions. My
-            therapy services are designed to help you:
-          </p>
-          <ul class="card__list">
-            <li>Overcome feelings of loneliness, homesickness, and cultural adjustment difficulties</li>
-            <li>Manage stress, anxiety, and emotional challenges related to relocation</li>
-            <li>Build resilience and a strong sense of identity in a new environment</li>
-          </ul>
-          <p class="card__text u-mt-sm">
-            Whether you&rsquo;ve moved for career, education, or family, I
-            provide a supportive space where you can explore your emotions and
-            develop healthy coping mechanisms.
-          </p>
+          <h3 class="card__title"><a class="card__title-link" href="expat-support.html">Expat mental health support</a></h3>
+          <p class="card__text"><em>Are you finding it hard to adjust to life in a new country? Do feelings of loneliness, uncertainty, or culture shock make everyday life more difficult? Let&rsquo;s navigate this journey together.</em></p>
+          <p class="card__text u-mt-sm"><a class="card__more" href="expat-support.html">Read more about expat mental health support &rarr;</a></p>
         </article>
 
         <!-- SERVICE 6 — Guidance for parents & families -->
@@ -301,25 +210,19 @@
           <span class="card__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.7 0-6 1.3-6 4v2h9v-2c0-1 .5-1.9 1.3-2.6A11 11 0 0 0 8 13Zm8 0c-.6 0-1.3.1-1.9.2A4 4 0 0 1 15 17v2h7v-2c0-2.7-3.3-4-6-4Z"/></svg>
           </span>
-          <h3 class="card__title">Guidance for parents &amp; families</h3>
-          <p class="card__text">
-            <em>Does your child need structured support to develop emotional
-            regulation, communication, and social skills? Do you need guidance
-            as a parent on how to deal with certain behaviors? Let&rsquo;s
-            create a tailored plan that works for your family.</em>
-          </p>
-          <p class="card__text u-mt-sm">
-            Supporting a child&rsquo;s emotional health also means empowering
-            parents with the right tools and insights. I work closely with
-            families to offer guidance, strategies, and resources to create a
-            nurturing environment for their child&rsquo;s growth.
-          </p>
-          <p class="card__text u-mt-sm">
-            <strong>Helping your child thrive.</strong> Every child and
-            adolescent deserves to feel confident, supported, and emotionally
-            secure. If you&rsquo;re looking for professional support for your
-            child&rsquo;s well-being, I&rsquo;m here to help.
-          </p>
+          <h3 class="card__title"><a class="card__title-link" href="parent-guidance.html">Guidance for parents &amp; families</a></h3>
+          <p class="card__text"><em>Does your child need structured support to develop emotional regulation, communication, and social skills? Do you need guidance as a parent on how to deal with certain behaviors? Let&rsquo;s create a tailored plan that works for your family.</em></p>
+          <p class="card__text u-mt-sm"><a class="card__more" href="parent-guidance.html">Read more about guidance for parents &amp; families &rarr;</a></p>
+        </article>
+
+        <!-- SERVICE 7 — Pregnancy, Postpartum & Beyond -->
+        <article class="card" id="pregnancy">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s-7.5-4.6-9.3-9A5.3 5.3 0 0 1 12 6.6a5.3 5.3 0 0 1 9.3 5.4C19.5 16.4 12 21 12 21Zm0-11.5a2.3 2.3 0 1 0 0 4.6 2.3 2.3 0 0 0 0-4.6Z"/></svg>
+          </span>
+          <h3 class="card__title"><a class="card__title-link" href="pregnancy-postpartum.html">Pregnancy, Postpartum &amp; Beyond</a></h3>
+          <p class="card__text"><em>Supporting you through pregnancy, birth and the transition into motherhood. A safe, non-judgmental space for the emotional changes that come with becoming a mother.</em></p>
+          <p class="card__text u-mt-sm"><a class="card__more" href="pregnancy-postpartum.html">Read more about pregnancy, postpartum &amp; beyond &rarr;</a></p>
         </article>
 
       </div>

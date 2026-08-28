@@ -216,7 +216,22 @@
       <ul class="nav__list" id="nav-panel" data-nav-panel>
         <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
         <li><a class="nav__link" href="about.html">About</a></li>
-        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li class="nav__item--sub" data-nav-sub>
+          <a class="nav__link" href="services.html">Services</a>
+          <button class="nav__sub-toggle" type="button" aria-expanded="false" aria-label="Show services menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 15.1 5.6 8.7 7 7.3l5 5 5-5 1.4 1.4-6.4 6.4Z"/></svg>
+          </button>
+          <ul class="nav__sub">
+          <li><a class="nav__sub-link" href="individual-therapy.html">Individual therapy</a></li>
+          <li><a class="nav__sub-link" href="child-psychology.html">Child psychology</a></li>
+          <li><a class="nav__sub-link" href="autism-therapy.html">Behavioral therapy for autism</a></li>
+          <li><a class="nav__sub-link" href="couple-counseling.html">Couple counseling</a></li>
+          <li><a class="nav__sub-link" href="expat-support.html">Expat mental health support</a></li>
+          <li><a class="nav__sub-link" href="parent-guidance.html">Guidance for parents & families</a></li>
+          <li><a class="nav__sub-link" href="pregnancy-postpartum.html">Pregnancy, Postpartum &amp; Beyond</a></li>
+          <li><a class="nav__sub-link nav__sub-link--all" href="services.html">All services &amp; fees</a></li>
+          </ul>
+        </li>
         <li><a class="nav__link" href="testimonials.html">Testimonials</a></li>
         <li><a class="nav__link" href="contact.html">Contact</a></li>
       </ul>
