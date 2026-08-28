@@ -799,6 +799,8 @@
       top: 100%;
       left: calc(-1 * var(--sp-sm));
       z-index: var(--z-nav-panel);
+      /* Wide enough for the longest item — labels never wrap on desktop. */
+      width: max-content;
       min-width: 15rem;
       padding: var(--sp-2xs) var(--sp-sm);
       background-color: var(--bg-page);
@@ -811,7 +813,10 @@
     .nav__item--sub:focus-within .nav__sub,
     .nav__item--sub.is-open .nav__sub { display: block; }
 
-    .nav__sub-link { min-height: 2.25rem; }
+    .nav__sub-link {
+      min-height: 2.25rem;
+      white-space: nowrap;
+    }
 
     .nav__sub-link--all {
       margin-top: var(--sp-3xs);
