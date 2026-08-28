@@ -202,86 +202,61 @@ project, point DNS there, then do the domain checklist below.
 
 ---
 
-## 5. Open items (in order of importance)
+## 5. Open items — CHECKLIST (tick as you go)
 
-### A. Content & legal — needed before the site can replace the old one
-1. **Activate FormSubmit** — one test submission on the live URL + click the
-   activation link in vf.psychology@gmail.com. Without this the form goes
-   nowhere. THE single most important remaining step.
-2. ~~VAT number~~ — done: footer shows BTW-id NL003190452B42 (28 pages).
-3. **Privacy statement** — `privacy.html` is a scaffold with `[BRACKETED]`
-   placeholders (address, processors: video platform, records system, e-mail
-   host; retention periods; complaints procedure). Needs Valeria's real
-   details and ideally a review by someone qualified. Remove the "draft"
-   banner at the top when done.
-4. **City** — `"addressLocality": "[CITY]"` in the JSON-LD on `index.html`.
-5. **Testimonials consent** — the 14 quotes are the ones from the old site
-   with the same first names + countries. Confirm each client is fine with
-   them being reused — now with 5-star ratings attached, which is a claim
-   the client should be comfortable making.
-6. **Spanish review** — Valeria (native, Chilean) must read the /es/ pages
-   before promoting the ES version; translations are Claude's first draft.
-7. **Verify the TikTok handle** — footer links to @nina_psych; confirm this
-   is really the practice's account.
-8. **Consent banner (optional)** — GA4 currently measures cookieless. For
-   full measurement add a small banner that fires
-   gtag('consent','update',{analytics_storage:'granted'}) on accept.
+Details for each item are in the sections above (§ 4) or behind the grep
+hints. Order within each block = priority.
+
+### A. Before launch — content & legal
+- [ ] **Activate FormSubmit** — submit the form once on the live URL, click
+      the activation link in vf.psychology@gmail.com. Until then NOTHING is
+      delivered. ← most important remaining step
+- [ ] **Privacy statement** — fill every `[BRACKETED]` value in
+      `privacy.html`, have it reviewed, remove the draft banner
+- [ ] **City** — `"addressLocality": "[CITY]"` in the JSON-LD on `index.html`
+- [ ] **Testimonials consent** — confirm all 14 clients are OK with being
+      quoted, now with 5-star ratings attached
+- [ ] **Testimonials language mix** — decide: the EN page currently shows all
+      14 quotes (English AND Spanish mixed); same on the ES page. Option:
+      show only same-language quotes per page, or sort own-language first,
+      or keep the mix (a note on the page already explains it). One answer
+      from the client, then ~30 min work
+- [ ] **Spanish review by Valeria** — /es/ is Claude's draft (Latin American
+      Spanish); native check before promoting the ES link
+- [ ] **Verify TikTok handle** — footer links to @nina_psych; is that really
+      the practice's account?
+- [x] ~~VAT~~ — BTW-id NL003190452B42 in the footer (all 28 pages)
 
 ### B. Assets
-6. **Fonts** — download Fraunces + Inter variable `.woff2` (Google Fonts,
-   latin subset), drop into `assets/fonts/` with the exact filenames in
-   README § Fonts. Until then system fonts are used (looks fine, slightly
-   different).
-7. **Favicon** — make `favicon.svg` (brain mark or "VF"), `favicon.ico` and
-   `apple-touch-icon.png` (180×180) from `assets/img/logo-mark.svg`, put them
-   in `assets/img/`, and uncomment the favicon block in the `<head>` of all
-   7 pages.
-8. **Photos** — hero, about-preview and about page all use the same portrait.
-   A second frame for the about page would avoid the repeat. Also needed:
-   `assets/img/og-default.jpg` (1200×630) for social sharing.
+- [ ] **Fonts** — drop `fraunces-variable.woff2` + `inter-variable.woff2`
+      into `assets/fonts/` (exact names: README § Fonts)
+- [ ] **Favicon** — favicon.svg + .ico + apple-touch-icon.png from the brain
+      mark; uncomment the favicon block in every `<head>`
+- [ ] **OG image** — `assets/img/og-default.jpg` (1200×630) for social shares
+- [ ] **Extra photo** (nice-to-have) — hero and about now use different
+      portraits; a third frame would add variety
 
 ### C. E-mail, domain & hosting
-9. **Create info@vf-psychology.nl** — a proper practice mailbox instead of the
-   Gmail address. Once it exists and is monitored, replace
-   `vf.psychology@gmail.com` in: the form `action=` on `contact.html`
-   (FormSubmit sends a new activation mail to the new address), the footer
-   on all pages, `contact.html`, `thank-you.html`, the JSON-LD on `index.html`
-   / `services.html` / `contact.html`, and `privacy.html`. Grep for
-   `vf.psychology@gmail.com` — that's every spot.
-10. **Move the domain to Cloud86** — transfer `vf-psychology.nl` from its
-    current registrar to Cloud86 (also host the mailbox there). Then decide
-    where the site is served from: keep Vercel (point DNS A/CNAME at Vercel,
-    add the domain in the Vercel project) or upload the static files to
-    Cloud86 hosting. Either works — there is no build step. Don't cancel
-    Squarespace until the new site is live on the domain.
-11. **Domain switch checklist** — when vf-psychology.nl points to the new
-    site: update `_next` on the form (see § 4), check `sitemap.xml` /
-    `robots.txt` / canonical URLs (already set to vf-psychology.nl), test the
-    form and every CTA on the live domain.
+- [ ] **Create info@vf-psychology.nl** — then grep `vf.psychology@gmail.com`
+      and replace everywhere (form action, footers, JSON-LD, privacy);
+      FormSubmit re-activates on the new address
+- [ ] **Move domain to Cloud86** — transfer vf-psychology.nl (+ mailbox);
+      then point DNS at Vercel or upload the files to Cloud86
+- [ ] **Domain-switch day** — update `_next` on both contact forms
+      (EN + ES), test form + CTAs on the live domain; only then cancel
+      Squarespace
 
-### D. Analytics, tracking & search
-12. **Google Tag Manager** — create a GTM container, paste the snippet in the
-    commented `ANALYTICS PLACEHOLDER` block in the `<head>` of every page
-    (currently only on `index.html`; copy it to the other 6). Load GA4 and
-    anything else through GTM, not as separate scripts.
-13. ~~Google Analytics 4~~ — done: G-N6305CKK46 is live on all 28 pages,
-    in Consent Mode with storage DENIED by default (cookieless, modeled
-    data). To measure with cookies, add a consent banner that calls
-    gtag('consent','update',{analytics_storage:'granted'}) on accept.
-14. **Google Search Console** — verify `vf-psychology.nl` (DNS TXT record via
-    Cloud86 is easiest), submit `https://vf-psychology.nl/sitemap.xml`,
-    request indexing of the 6 public pages, and keep an eye on Core Web
-    Vitals. Do the same in Bing Webmaster Tools (that also feeds ChatGPT /
-    Copilot search).
-15. **Sitemap for Google and AI search** — `sitemap.xml` exists and lists all
-    public pages (thank-you.html is deliberately excluded and `noindex`).
-    Keep `<lastmod>` current when pages change. For AI search: `robots.txt`
-    already allows all crawlers — leave it that way (don't block GPTBot,
-    ClaudeBot, PerplexityBot etc.); add an `llms.txt` at the root with a short
-    plain-text description of the practice, services, languages, and the
-    page URLs; and keep the JSON-LD (Person / ProfessionalService / FAQPage)
-    up to date — that structured data is what AI answers and Google rich
-    results read.
+### D. Analytics & search
+- [ ] **Google Tag Manager** (optional) — GA4 already runs standalone; move
+      it into GTM only if more tags are coming
+- [ ] **Consent banner** (optional) — GA4 measures cookieless now; a banner
+      firing `gtag('consent','update',{analytics_storage:'granted'})`
+      enables full measurement
+- [ ] **Search Console + Bing** — verify domain (DNS TXT via Cloud86),
+      submit sitemap.xml, request indexing
+- [ ] **llms.txt** — short plain-text practice description at the root for
+      AI search; keep JSON-LD and `<lastmod>` current
+- [x] ~~GA4~~ — G-N6305CKK46 live on all 28 pages (Consent Mode, cookieless)
 
 ---
 
