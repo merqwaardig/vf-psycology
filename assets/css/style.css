@@ -58,6 +58,16 @@
     --c-accent-100: #F2E0D6;
     */
 
+    /* ---- COLOUR: pastel accents ------------------------------------
+       A small, deliberate palette used in rotation for icon chips, card
+       tints, step numbers and avatars. Each background carries its own
+       readable ink (7:1+). Use the pairs together, never mix them.      */
+    --c-pastel-mango:      #FBE3C9;  --c-pastel-mango-ink:  #7A4412;
+    --c-pastel-purple:     #EDE7F2;  --c-pastel-purple-ink: #4A3D5C;
+    --c-pastel-green:      #DCE6DF;  --c-pastel-green-ink:  #2E4639;
+    --c-pastel-yellow:     #F7EFC7;  --c-pastel-yellow-ink: #63550F;
+    --c-pastel-blue:       #DCE8F0;  --c-pastel-blue-ink:   #2F4B60;
+
     --c-focus:     #B25C1E;  /* focus ring — deliberately off-accent so it
                                 stays visible on top of accent surfaces    */
 
@@ -970,19 +980,28 @@
      initFaqTrim in main.js — without JS the full list is simply shown). */
   .accordion__more { margin-top: var(--sp-md); }
 
+  /* The FAQ band trades its sand background for a calm pastel blue. */
+  .section--faq { background-color: var(--c-pastel-blue); }
+  .section--faq .accordion__item { background-color: var(--bg-page); }
+
   /* ---------------------------------------------------------------------
      RECOGNITION ("Does this sound familiar?")
      ------------------------------------------------------------------ */
   /* Soft lilac band — same hue as the purple testimonial avatar. It
      overrides the default .section--alt sand background on this section. */
   .section--recognition {
-    background-color: #EDE7F2;
+    background-color: var(--c-pastel-purple);
   }
 
   .section--recognition .recognition__item {
     border-color: #D8CCE4;
-    border-left-color: #7A6693;
   }
+
+  /* Each question card gets its own pastel accent edge. */
+  .recognition__item:nth-child(4n + 1) { border-left-color: #B98A4E; }
+  .recognition__item:nth-child(4n + 2) { border-left-color: #7A6693; }
+  .recognition__item:nth-child(4n + 3) { border-left-color: #B3A146; }
+  .recognition__item:nth-child(4n + 4) { border-left-color: #6E93AD; }
 
   .recognition__list {
     display: grid;
@@ -1029,6 +1048,27 @@
   }
 
   .card--filled { background-color: var(--bg-card); border-color: transparent; }
+
+  /* Pastel rotation. Any grid of cards cycles mango → purple → green →
+     yellow → blue on its icon chips; filled cards also tint their surface.
+     Position-based on purpose: add or reorder cards and it keeps working. */
+  .grid > .card:nth-child(5n + 1) .card__icon { background-color: var(--c-pastel-mango);  color: var(--c-pastel-mango-ink); }
+  .grid > .card:nth-child(5n + 2) .card__icon { background-color: var(--c-pastel-purple); color: var(--c-pastel-purple-ink); }
+  .grid > .card:nth-child(5n + 3) .card__icon { background-color: var(--c-pastel-green);  color: var(--c-pastel-green-ink); }
+  .grid > .card:nth-child(5n + 4) .card__icon { background-color: var(--c-pastel-yellow); color: var(--c-pastel-yellow-ink); }
+  .grid > .card:nth-child(5n + 5) .card__icon { background-color: var(--c-pastel-blue);   color: var(--c-pastel-blue-ink); }
+
+  .grid > .card--filled:nth-child(5n + 1) { background-color: var(--c-pastel-mango); }
+  .grid > .card--filled:nth-child(5n + 2) { background-color: var(--c-pastel-purple); }
+  .grid > .card--filled:nth-child(5n + 3) { background-color: var(--c-pastel-green); }
+  .grid > .card--filled:nth-child(5n + 4) { background-color: var(--c-pastel-yellow); }
+  .grid > .card--filled:nth-child(5n + 5) { background-color: var(--c-pastel-blue); }
+
+  .grid > .card--filled:nth-child(5n + 1) .card__icon { background-color: rgba(255, 255, 255, 0.55); }
+  .grid > .card--filled:nth-child(5n + 2) .card__icon { background-color: rgba(255, 255, 255, 0.55); }
+  .grid > .card--filled:nth-child(5n + 3) .card__icon { background-color: rgba(255, 255, 255, 0.55); }
+  .grid > .card--filled:nth-child(5n + 4) .card__icon { background-color: rgba(255, 255, 255, 0.55); }
+  .grid > .card--filled:nth-child(5n + 5) .card__icon { background-color: rgba(255, 255, 255, 0.55); }
 
   .card__icon {
     display: inline-flex;
@@ -1204,6 +1244,11 @@
     font-weight: var(--fw-semi);
   }
 
+  /* Step numbers rotate through three pastels instead of flat green. */
+  .steps__item:nth-child(3n + 1)::before { background-color: var(--c-pastel-mango); color: var(--c-pastel-mango-ink); }
+  .steps__item:nth-child(3n + 2)::before { background-color: var(--c-pastel-blue);  color: var(--c-pastel-blue-ink); }
+  .steps__item:nth-child(3n + 3)::before { background-color: var(--c-pastel-green); color: var(--c-pastel-green-ink); }
+
   .steps__title { margin-bottom: var(--sp-2xs); }
 
   .steps__text { color: var(--text-muted); }
@@ -1306,10 +1351,10 @@
     font-weight: var(--fw-semi);
   }
 
-  .testimonial__avatar--1 { background-color: var(--c-accent-100); color: var(--c-accent-700); }
-  .testimonial__avatar--2 { background-color: var(--c-sand-200);   color: var(--c-ink-700); }
-  .testimonial__avatar--3 { background-color: #E8E0EE;             color: #4A3D5C; }
-  .testimonial__avatar--4 { background-color: #F2E0D6;             color: #7A3520; }
+  .testimonial__avatar--1 { background-color: var(--c-pastel-green);  color: var(--c-pastel-green-ink); }
+  .testimonial__avatar--2 { background-color: var(--c-pastel-mango);  color: var(--c-pastel-mango-ink); }
+  .testimonial__avatar--3 { background-color: var(--c-pastel-purple); color: var(--c-pastel-purple-ink); }
+  .testimonial__avatar--4 { background-color: var(--c-pastel-blue);   color: var(--c-pastel-blue-ink); }
 
   .testimonial__stars { display: inline-flex; gap: 2px; color: #C79A3B; }
 
