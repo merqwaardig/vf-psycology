@@ -680,11 +680,20 @@
     text-decoration: none;
   }
 
-  .nav__link:hover { color: var(--c-accent-700); }
+  .nav__link {
+    padding-inline: var(--sp-2xs);
+    border-radius: var(--r-sm);
+  }
+
+  .nav__link:hover {
+    color: var(--c-accent-700);
+    background-color: var(--c-accent-100);
+  }
 
   .nav__link[aria-current="page"] {
     color: var(--c-accent-700);
     font-weight: var(--fw-semi);
+    background-color: var(--c-accent-100);
   }
 
   /* Services dropdown. Mobile: the sub-list sits inline in the open panel,
@@ -725,16 +734,22 @@
     display: flex;
     align-items: center;
     min-height: var(--tap-min);
+    padding-inline: var(--sp-2xs);
+    border-radius: var(--r-sm);
     color: var(--text-body);
     font-size: var(--fs-sm);
     text-decoration: none;
   }
 
-  .nav__sub-link:hover { color: var(--c-accent-700); }
+  .nav__sub-link:hover {
+    color: var(--c-accent-700);
+    background-color: var(--c-accent-100);
+  }
 
   .nav__sub-link[aria-current="page"] {
     color: var(--c-accent-700);
     font-weight: var(--fw-semi);
+    background-color: var(--c-accent-100);
   }
 
   .nav__sub-link--all {
