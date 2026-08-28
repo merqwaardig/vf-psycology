@@ -230,6 +230,39 @@
     accordion.insertAdjacentElement('afterend', button);
   }
 
+
+  /* --------------------------------------------------------------------------
+     4c. initCarousel
+     Prev/next buttons for the testimonials carousel. The track itself is a
+     scroll-snap container, so swiping and horizontal scrolling work without
+     this; the buttons page through one viewport of cards at a time.
+     -------------------------------------------------------------------------- */
+  function initCarousel() {
+    var carousel = document.querySelector('[data-carousel]');
+    if (!carousel) return;
+
+    var track = carousel.querySelector('.carousel__track');
+    var prev = carousel.querySelector('[data-carousel-prev]');
+    var next = carousel.querySelector('[data-carousel-next]');
+
+    function page(direction) {
+      track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
+    }
+
+    prev.addEventListener('click', function () { page(-1); });
+    next.addEventListener('click', function () { page(1); });
+
+    function sync() {
+      var max = track.scrollWidth - track.clientWidth;
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft >= max - 4;
+    }
+
+    track.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  }
+
   /* ---------------------------------------------------------------------------
      5. initFormValidation
      Progressive enhancement over native validation: same rules, friendlier
@@ -355,6 +388,7 @@
   initNavToggle();
   initNavSub();
   initFaqTrim();
+  initCarousel();
   initStickyHeader();
   initAccordion();
   initFormValidation();

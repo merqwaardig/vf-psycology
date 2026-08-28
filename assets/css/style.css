@@ -1210,6 +1210,104 @@
   /* ---------------------------------------------------------------------
      TESTIMONIAL
      ------------------------------------------------------------------ */
+  /* -------------------------------------------------------------------
+     TESTIMONIAL CAROUSEL (testimonials page)
+     Scroll-snap does the work; the buttons (wired up in main.js) are a
+     convenience on top. Without JS it is simply a swipeable row.
+     ------------------------------------------------------------------ */
+  .carousel { position: relative; }
+
+  .carousel__track {
+    display: flex;
+    gap: var(--sp-md);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-block: var(--sp-3xs) var(--sp-sm);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carousel__track:focus-visible {
+    outline: var(--ring);
+    outline-offset: var(--ring-offset);
+  }
+
+  .carousel__track > .testimonial {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  @media (min-width: 640px) {
+    .carousel__track > .testimonial { flex-basis: calc(50% - var(--sp-md) / 2); }
+  }
+
+  @media (min-width: 900px) {
+    .carousel__track > .testimonial { flex-basis: calc((100% - 2 * var(--sp-md)) / 3); }
+  }
+
+  .carousel__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tap-min);
+    height: var(--tap-min);
+    transform: translateY(-50%);
+    border-radius: var(--r-pill);
+    background-color: var(--bg-page);
+    border: var(--bw-hair) solid var(--border-subtle);
+    box-shadow: var(--sh-md);
+    color: var(--text-heading);
+    cursor: pointer;
+  }
+
+  .carousel__btn:hover { background-color: var(--c-accent-100); color: var(--c-accent-700); }
+
+  .carousel__btn svg { width: 1.25rem; height: 1.25rem; }
+
+  .carousel__btn--prev { left: calc(-1 * var(--sp-2xs)); }
+  .carousel__btn--next { right: calc(-1 * var(--sp-2xs)); }
+
+  .carousel__btn[disabled] { opacity: 0.35; cursor: default; }
+  .carousel__btn[disabled]:hover { background-color: var(--bg-page); color: var(--text-heading); }
+
+  /* Card header: initials avatar + star rating */
+  .testimonial__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-xs);
+    margin-bottom: var(--sp-sm);
+  }
+
+  .testimonial__avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: none;
+    border-radius: var(--r-pill);
+    font-family: var(--font-display);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-semi);
+  }
+
+  .testimonial__avatar--1 { background-color: var(--c-accent-100); color: var(--c-accent-700); }
+  .testimonial__avatar--2 { background-color: var(--c-sand-200);   color: var(--c-ink-700); }
+  .testimonial__avatar--3 { background-color: #E8E0EE;             color: #4A3D5C; }
+  .testimonial__avatar--4 { background-color: #F2E0D6;             color: #7A3520; }
+
+  .testimonial__stars { display: inline-flex; gap: 2px; color: #C79A3B; }
+
+  .testimonial__stars svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+  }
+
   .testimonial {
     display: flex;
     flex-direction: column;

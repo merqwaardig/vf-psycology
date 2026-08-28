@@ -141,10 +141,16 @@
   <section class="section section--testimonials">
     <div class="container">
 
-      <div class="grid u-grid-3 reveal">
-
+      <div class="carousel reveal" data-carousel>
+        <button class="carousel__btn carousel__btn--prev" type="button" data-carousel-prev aria-label="Previous testimonials">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.4 5.4 8.8 12l6.6 6.6-1.4 1.4-8-8 8-8z"/></svg>
+        </button>
+        <div class="carousel__track" tabindex="0" role="region" aria-label="Testimonials">
         <figure class="testimonial">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--1" aria-hidden="true">J</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               As a mom, we worry about our children. Valeria is a great resource
@@ -157,9 +163,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Jennifer &middot; The Netherlands</figcaption>
         </figure>
-
         <figure class="testimonial">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--2" aria-hidden="true">K</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Valeria really knows her stuff! I would recommend her to anyone
@@ -172,9 +180,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Kahli &middot; Sweden</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--3" aria-hidden="true">R</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Valeria me ayudó durante un año a manejar mi estrés, ansiedad y
@@ -187,9 +197,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Roxanna &middot; Puerto Rico</figcaption>
         </figure>
-
         <figure class="testimonial">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--4" aria-hidden="true">N</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               As an expat, I was looking for a therapist that spoke English and
@@ -203,9 +215,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Nancy &middot; USA</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--1" aria-hidden="true">J</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Valeria es una excelente psicóloga, trabajando siempre desde la
@@ -216,9 +230,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Judith &middot; Chile</figcaption>
         </figure>
-
         <figure class="testimonial">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--2" aria-hidden="true">C</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               The process we followed with Valeria to help my daughter adapt to
@@ -231,9 +247,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Claudia &middot; The Netherlands</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--3" aria-hidden="true">M</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Empecé con Valeria sabiendo que tenía ansiedad, y terminé sabiendo
@@ -244,9 +262,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Marina &middot; Spain</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--4" aria-hidden="true">M</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Mi hijo pasó por un proceso muy difícil, me recomendaron a Valeria
@@ -258,9 +278,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Maribel &middot; Chile</figcaption>
         </figure>
-
         <figure class="testimonial">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--1" aria-hidden="true">A</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               With a mix of exercises and conversations you will understand the
@@ -273,9 +295,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Alberto &middot; Italy</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--2" aria-hidden="true">M</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Me estuve atendiendo con Valeria en un tiempo muy complicado para
@@ -291,9 +315,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Maria &middot; Chile</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--3" aria-hidden="true">C</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Valeria es una excelente psicóloga, me ha ayudado a enfrentar mis
@@ -304,9 +330,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Claudia &middot; Honduras</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--4" aria-hidden="true">J</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Valeria me ha ayudado a entenderme mejor y a quererme. Conocerla
@@ -318,9 +346,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">J.C. &middot; The Netherlands</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--1" aria-hidden="true">P</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Aunque me costó mucho tomar la determinación de acudir a un
@@ -337,9 +367,11 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Paola &middot; Venezuela</figcaption>
         </figure>
-
         <figure class="testimonial" lang="es">
-          <svg class="testimonial__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6C6.9 7.6 5.4 10 5.1 13H8v5H3v-4.6C3 9 5 6.6 8.6 4.8L9.5 6Zm10 0C16.9 7.6 15.4 10 15.1 13H18v5h-5v-4.6c0-4.4 2-6.8 5.6-8.6l.9 1.2Z"/></svg>
+          <div class="testimonial__head">
+            <span class="testimonial__avatar testimonial__avatar--2" aria-hidden="true">M</span>
+            <span class="testimonial__stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.3l7.1-.6L12 2l2.9 6.7 7.1.6-5.4 4.7 1.6 7z"/></svg></span>
+          </div>
           <blockquote class="testimonial__quote">
             <p>
               Cuando me comuniqué con Valeria, rápidamente estuvo dispuesta,
@@ -357,7 +389,10 @@
           </blockquote>
           <figcaption class="testimonial__attribution">Melani &middot; Peru</figcaption>
         </figure>
-
+        </div>
+        <button class="carousel__btn carousel__btn--next" type="button" data-carousel-next aria-label="Next testimonials">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8.6 5.4 1.4-1.4 8 8-8 8-1.4-1.4 6.6-6.6z"/></svg>
+        </button>
       </div>
 
     </div>
