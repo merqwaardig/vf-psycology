@@ -832,6 +832,9 @@
     .nav__item--sub:focus-within .nav__sub,
     .nav__item--sub.is-open .nav__sub { display: block; }
 
+    /* Menu labels never wrap — "Sobre mí" on one line, always. */
+    .nav__link { white-space: nowrap; }
+
     .nav__sub-link {
       min-height: 2.25rem;
       white-space: nowrap;
