@@ -1,6 +1,6 @@
 # HANDOFF — VF Psychology website
 
-Last updated: 18 August 2026
+Last updated: 28 August 2026
 Repo: https://github.com/merqwaardig/vf-psycology (branch `main`)
 Preview: https://vf-psycology.vercel.app (auto-deploys from `main`)
 Future domain: https://vf-psychology.nl (currently still the old Squarespace site)
@@ -9,6 +9,40 @@ This document is the single place to look if you're picking this project up:
 what it is, where everything lives, what's decided, what's still open, and
 how to do the common tasks. Technical detail on the CSS/JS lives in
 `README.md`; the original design brief is `VF-PSYCHOLOGY-BUILD-BRIEF.md`.
+
+---
+
+## 0. Session log — 28 August 2026 (all deployed to the Vercel preview)
+
+- **Contact form works**: posts to FormSubmit → vf.psychology@gmail.com,
+  honeypot, thank-you page. ⚠️ One-time activation e-mail still to click.
+- **Booking changed to a free 10-minute call** (was: 30-min intake); the
+  callout links to the form, which has a "What would you like?" select.
+- **Services**: nav dropdown + seven per-service pages (incl. the brand-new
+  **Pregnancy, Postpartum & Beyond** copy from the client); overview cards
+  are teasers linking through. All in the sitemap.
+- **Spanish site** under `/es/` — full translation (Latin American Spanish,
+  tú/ustedes), EN↔ES switch in the header, hreflang, bilingual form
+  validation, Spanish testimonials on the ES homepage. ⚠️ Needs Valeria's
+  native review.
+- **PGB temporarily hidden** everywhere (commented out, search "PGB" to
+  restore).
+- **Design**: pastel palette (mango/purple/green/yellow/blue tokens) on card
+  icons, filled cards, step numbers, avatars; lilac recognition band with
+  per-card accent edges; pastel-green FAQ (items same colour as the band);
+  blurred woodland photo behind every CTA band; active nav item tinted sage,
+  pastel hovers; homepage FAQ trimmed to 3 + "Show all" button.
+- **Testimonials page**: carousel (scroll-snap + buttons), 5-star ratings,
+  initials avatars (deliberately NO AI faces — deception risk; see § 6).
+- **Media**: new about-page portrait (also in the homepage about preview);
+  mobile hero shows the portrait + credentials directly under the headline.
+- **GA4 live** (G-N6305CKK46) on all 28 pages, Consent Mode storage=denied
+  (cookieless until a consent banner is added).
+- **Footer**: BTW-id NL003190452B42 (VAT placeholder gone); TikTok
+  @nina_psych added to socials + JSON-LD sameAs (⚠️ handle unverified —
+  doesn't match Valeria's other handles).
+- **Typography reviewed** (Lato / Source Sans Pro previews) — client chose
+  to keep Fraunces + Inter.
 
 ---
 
@@ -171,8 +205,9 @@ project, point DNS there, then do the domain checklist below.
 ## 5. Open items (in order of importance)
 
 ### A. Content & legal — needed before the site can replace the old one
-1. **Activate FormSubmit** — one test submission + click the activation link
-   in vf.psychology@gmail.com. Without this the form goes nowhere.
+1. **Activate FormSubmit** — one test submission on the live URL + click the
+   activation link in vf.psychology@gmail.com. Without this the form goes
+   nowhere. THE single most important remaining step.
 2. ~~VAT number~~ — done: footer shows BTW-id NL003190452B42 (28 pages).
 3. **Privacy statement** — `privacy.html` is a scaffold with `[BRACKETED]`
    placeholders (address, processors: video platform, records system, e-mail
@@ -182,7 +217,15 @@ project, point DNS there, then do the domain checklist below.
 4. **City** — `"addressLocality": "[CITY]"` in the JSON-LD on `index.html`.
 5. **Testimonials consent** — the 14 quotes are the ones from the old site
    with the same first names + countries. Confirm each client is fine with
-   them being reused.
+   them being reused — now with 5-star ratings attached, which is a claim
+   the client should be comfortable making.
+6. **Spanish review** — Valeria (native, Chilean) must read the /es/ pages
+   before promoting the ES version; translations are Claude's first draft.
+7. **Verify the TikTok handle** — footer links to @nina_psych; confirm this
+   is really the practice's account.
+8. **Consent banner (optional)** — GA4 currently measures cookieless. For
+   full measurement add a small banner that fires
+   gtag('consent','update',{analytics_storage:'granted'}) on accept.
 
 ### B. Assets
 6. **Fonts** — download Fraunces + Inter variable `.woff2` (Google Fonts,
