@@ -193,6 +193,43 @@
     });
   }
 
+
+  /* --------------------------------------------------------------------------
+     4b. initFaqTrim
+     The homepage FAQ is long. With JS available, only the first three
+     questions are shown and a button reveals the rest; without JS the full
+     list stays visible. The button removes itself after one use.
+     -------------------------------------------------------------------------- */
+  function initFaqTrim() {
+    var accordion = document.querySelector('[data-accordion]');
+    if (!accordion) return;
+
+    var items = accordion.querySelectorAll('.accordion__item');
+    var SHOWN = 3;
+    if (items.length <= SHOWN + 1) return;
+
+    var hidden = Array.prototype.slice.call(items, SHOWN);
+    hidden.forEach(function (item) { item.hidden = true; });
+
+    var isSpanish = (document.documentElement.lang || '').indexOf('es') === 0;
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'btn btn--secondary accordion__more';
+    button.textContent = isSpanish
+      ? 'Mostrar las ' + items.length + ' preguntas'
+      : 'Show all ' + items.length + ' questions';
+
+    button.addEventListener('click', function () {
+      hidden.forEach(function (item) { item.hidden = false; });
+      button.remove();
+      // Move focus to the first newly revealed question for keyboard users.
+      var trigger = hidden[0].querySelector('[data-accordion-trigger]');
+      if (trigger) trigger.focus();
+    });
+
+    accordion.insertAdjacentElement('afterend', button);
+  }
+
   /* ---------------------------------------------------------------------------
      5. initFormValidation
      Progressive enhancement over native validation: same rules, friendlier
@@ -207,7 +244,13 @@
     // or place next to the field.
     form.setAttribute('novalidate', 'novalidate');
 
-    var messages = {
+    var isSpanish = (document.documentElement.lang || '').indexOf('es') === 0;
+
+    var messages = isSpanish ? {
+      valueMissing: 'Este campo es obligatorio.',
+      typeMismatch: 'Revisa esta dirección — parece incompleta.',
+      tooShort: 'Añade un poco más de detalle.'
+    } : {
       valueMissing: 'This field is required.',
       typeMismatch: 'Please check this address — it looks incomplete.',
       tooShort: 'Please add a little more detail.'
@@ -217,12 +260,12 @@
       var v = field.validity;
       if (v.valueMissing) {
         return field.type === 'checkbox'
-          ? 'Please tick this box to continue.'
+          ? (isSpanish ? 'Marca esta casilla para continuar.' : 'Please tick this box to continue.')
           : messages.valueMissing;
       }
       if (v.typeMismatch) return messages.typeMismatch;
       if (v.tooShort) return messages.tooShort;
-      return field.validationMessage || 'Please check this field.';
+      return field.validationMessage || (isSpanish ? 'Revisa este campo.' : 'Please check this field.');
     }
 
     function errorNodeFor(field) {
@@ -311,6 +354,7 @@
   markJsAvailable();
   initNavToggle();
   initNavSub();
+  initFaqTrim();
   initStickyHeader();
   initAccordion();
   initFormValidation();

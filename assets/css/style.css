@@ -742,6 +742,25 @@
     color: var(--c-accent-700);
   }
 
+
+  /* Language switch — one compact link to the same page in the other
+     language (EN pages show "ES", Spanish pages show "EN"). */
+  .lang-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.25rem;
+    min-height: var(--tap-min);
+    border-radius: var(--r-sm);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semi);
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  .lang-switch:hover { color: var(--c-accent-700); background-color: var(--bg-alt); }
+
   .nav__toggle {
     display: inline-flex;
     align-items: center;
@@ -928,6 +947,10 @@
     font-size: var(--fs-xs);
     color: var(--text-muted);
   }
+
+  /* "Show all questions" button under the trimmed homepage FAQ (added by
+     initFaqTrim in main.js — without JS the full list is simply shown). */
+  .accordion__more { margin-top: var(--sp-md); }
 
   /* ---------------------------------------------------------------------
      RECOGNITION ("Does this sound familiar?")

@@ -97,6 +97,25 @@ dropdown is .nav__item--sub / .nav__sub in the CSS and initNavSub() in main.js.
 Pregnancy, Postpartum & Beyond is new copy supplied by the client (Aug 2026);
 the other six pages carry the live-site copy.
 
+### Spanish version (/es/)
+The whole site exists in Spanish under `/es/` — same filenames, same CSS/JS.
+An "ES"/"EN" link in the header switches to the same page in the other
+language. Every page carries hreflang tags (en / es / x-default) and both
+languages are in `sitemap.xml`. Form validation messages are bilingual
+(driven by the `lang` attribute); the Spanish contact form posts to the same
+FormSubmit address with its own `_next` → `/es/thank-you.html` and its own
+subject line. The Spanish homepage shows three Spanish testimonials;
+`es/privacy.html` is a short notice linking to the English statement (the
+binding version) — translate it fully once the English scaffold is final.
+⚠️ The translations were machine-drafted by Claude (informal "tú", therapy
+register): **Valeria must review them before the ES link goes live-live.**
+Every future text change must be made in BOTH languages.
+
+### Homepage FAQ
+The FAQ shows only the first 3 questions; a "Show all N questions" button
+(bilingual) reveals the rest. Without JS the full list is visible. Logic in
+initFaqTrim() in main.js.
+
 ### Booking / CTAs
 Every "Book a free 10-minute call" button on the site links to
 `contact.html#book`. That section shows a green callout whose button jumps to
