@@ -1289,6 +1289,38 @@
      ------------------------------------------------------------------ */
   .cta-band { text-align: center; }
 
+  /* Photo variant (homepage): a blurred woodland path behind the dark band.
+     The image lives on ::before so the blur never touches the text; ::after
+     is a dark ink overlay that keeps the contrast of the plain band. The
+     blur is pre-scaled so its soft edges stay outside the clipped box. */
+  .cta-band--photo {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-band--photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/cta-woods.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+    transform: scale(1.08);
+  }
+
+  .cta-band--photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(30, 27, 23, 0.72);
+  }
+
+  .cta-band--photo > .container {
+    position: relative;
+    z-index: 1;
+  }
+
   .cta-band__inner {
     max-width: var(--container-narrow);
     margin-inline: auto;
