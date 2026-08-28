@@ -973,6 +973,17 @@
   /* ---------------------------------------------------------------------
      RECOGNITION ("Does this sound familiar?")
      ------------------------------------------------------------------ */
+  /* Soft lilac band — same hue as the purple testimonial avatar. It
+     overrides the default .section--alt sand background on this section. */
+  .section--recognition {
+    background-color: #EDE7F2;
+  }
+
+  .section--recognition .recognition__item {
+    border-color: #D8CCE4;
+    border-left-color: #7A6693;
+  }
+
   .recognition__list {
     display: grid;
     gap: var(--sp-sm);
