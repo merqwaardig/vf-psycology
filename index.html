@@ -181,17 +181,20 @@
             "@type": "Question",
             "name": "Do you accept insurance?",
             "acceptedAnswer": { "@type": "Answer", "text": "I am a private psychologist and do not work with insurance companies in the Netherlands. The mental healthcare system is currently overwhelmed, with long waiting lists for insured care. By offering private therapy, I can guarantee immediate availability, so you can receive the support you need without unnecessary delays. My fees are accessible, and some families may be able to finance their sessions through the Personal Budget (PGB) provided by the municipality." }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the PGB and how does it work?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The PGB (Persoonsgebonden Budget) is a subsidy that allows individuals with specific care needs to hire professionals of their choice, rather than relying solely on public healthcare services. If you meet the requirements, you can apply for this budget through your municipality and use it to cover the cost of therapy sessions." }
           }
         ]
       }
     ]
   }
   </script>
+  <!-- Removed from the FAQPage JSON-LD above while the PGB question is hidden
+       (JSON can't hold comments). Restore together with the accordion item:
+          {
+            "@type": "Question",
+            "name": "What is the PGB and how does it work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The PGB (Persoonsgebonden Budget) is a subsidy that allows individuals with specific care needs to hire professionals of their choice, rather than relying solely on public healthcare services. If you meet the requirements, you can apply for this budget through your municipality and use it to cover the cost of therapy sessions." }
+          }
+  -->
 </head>
 
 <body>
@@ -949,6 +952,10 @@
           </div>
         </div>
 
+        <!-- PGB FAQ — temporarily hidden on request (Aug 2026), will return
+             later. To restore: uncomment this block AND re-add the matching
+             Question entry in the FAQPage JSON-LD in <head> (kept there as a
+             comment next to the mainEntity list).
         <div class="accordion__item">
           <h3>
             <button class="accordion__trigger" type="button"
@@ -969,6 +976,8 @@
             </p>
           </div>
         </div>
+        -->
+
 
       </div>
 
