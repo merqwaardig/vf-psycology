@@ -227,9 +227,14 @@ hints. Order within each block = priority.
 ### B. Assets
 - [ ] **Fonts** — drop `fraunces-variable.woff2` + `inter-variable.woff2`
       into `assets/fonts/` (exact names: README § Fonts)
-- [ ] **Favicon** — favicon.svg + .ico + apple-touch-icon.png from the brain
-      mark; uncomment the favicon block in every `<head>`
-- [ ] **OG image** — `assets/img/og-default.jpg` (1200×630) for social shares
+- [x] ~~Favicon~~ — `assets/img/favicon.svg` (sage rounded square + brain
+      mark) + `apple-touch-icon.png` (180×180) generated from the brand mark;
+      favicon block now LIVE in every page's `<head>` (all 28). No `.ico` — the
+      SVG + PNG cover modern browsers and iOS.
+- [x] ~~OG image~~ — `assets/img/og-default.jpg` (1200×630) generated from the
+      brand mark + wordmark (⚠️ auto-generated PLACEHOLDER, system fonts not
+      Fraunces/Inter — replace with a designed version when there is one; the
+      `<meta og:image>` tags already point at it on every page)
 - [ ] **Extra photo** (nice-to-have) — hero and about now use different
       portraits; a third frame would add variety
 
@@ -251,8 +256,8 @@ hints. Order within each block = priority.
       enables full measurement
 - [ ] **Search Console + Bing** — verify domain (DNS TXT via Cloud86),
       submit sitemap.xml, request indexing
-- [ ] **llms.txt** — short plain-text practice description at the root for
-      AI search; keep JSON-LD and `<lastmod>` current
+- [x] ~~llms.txt~~ — `/llms.txt` added at the root (practice summary, key
+      facts, service + page links). Keep JSON-LD and `<lastmod>` current.
 - [x] ~~GA4~~ — G-N6305CKK46 live on all 28 pages (Consent Mode, cookieless)
 
 ---
