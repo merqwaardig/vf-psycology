@@ -410,6 +410,7 @@
   .prose { max-width: var(--measure); }
   .prose > * + * { margin-top: var(--sp-md); }
   .prose h2 { margin-top: var(--sp-xl); }
+  .prose > h2:first-child { margin-top: 0; }
   .prose h3 { margin-top: var(--sp-lg); }
   .prose ul { padding-left: var(--sp-md); }
   .prose li + li { margin-top: var(--sp-2xs); }
