@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="A parent and child walking together, holding hands, under a warm sun">
+<rect width="800" height="1000" fill="#F7F2EA"/>
+<circle cx="600" cy="250" r="150" fill="#FBE3C8"/>
+<path d="M0 720 Q200 640 400 700 T800 690 L800 1000 L0 1000 Z" fill="#DCE6DF"/>
+<path d="M0 820 Q250 760 500 820 T800 800 L800 1000 L0 1000 Z" fill="#C9DACE"/>
+<rect x="300" y="440" width="84" height="370" rx="42" fill="#3B5A49"/>
+<circle cx="340" cy="380" r="62" fill="#3B5A49"/>
+<path d="M395 560 Q430 600 445 650" stroke="#3B5A49" stroke-width="22" stroke-linecap="round" fill="none"/>
+<rect x="494" y="620" width="70" height="240" rx="35" fill="#4E7360"/>
+<circle cx="530" cy="578" r="46" fill="#4E7360"/>
+<path d="M440 650 Q470 690 500 680" stroke="#4E7360" stroke-width="20" stroke-linecap="round" fill="none"/>
+<path d="M140 300 Q160 270 190 300 Q220 330 190 350 Q160 330 140 300 Z" fill="#EFE7DA"/>
+<path d="M100 470 Q120 440 150 470 Q180 500 150 520 Q120 500 100 470 Z" fill="#E2D6C4"/>
+</svg>
