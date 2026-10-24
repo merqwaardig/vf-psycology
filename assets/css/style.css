@@ -1335,6 +1335,25 @@
   .carousel__btn[disabled] { opacity: 0.35; cursor: default; }
   .carousel__btn[disabled]:hover { background-color: var(--bg-page); color: var(--text-heading); }
 
+  /* Lilac arrows on desktop; on phones the reviews stack vertically instead. */
+  .carousel__btn {
+    background-color: var(--c-pastel-purple);
+    color: var(--c-pastel-purple-ink);
+    border-color: transparent;
+  }
+  .carousel__btn:hover { background-color: var(--c-pastel-purple-ink); color: var(--c-pastel-purple); }
+  .carousel__btn[disabled]:hover { background-color: var(--c-pastel-purple); color: var(--c-pastel-purple-ink); }
+
+  @media (max-width: 639px) {
+    .carousel__track {
+      flex-direction: column;
+      overflow: visible;
+      scroll-snap-type: none;
+    }
+    .carousel__track > .testimonial { flex: none; width: 100%; }
+    .carousel__btn { display: none; }
+  }
+
   /* Card header: initials avatar + star rating */
   .testimonial__head {
     display: flex;
