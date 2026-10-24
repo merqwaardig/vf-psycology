@@ -445,6 +445,7 @@
   /* Narrow image column beside a long text column. The image stays at the
      top of a tall block instead of floating in its vertical middle. */
   .split--aside { --split-cols: 0.8fr 1.2fr; }
+  @media (max-width: 899px) { .split--aside { gap: var(--sp-sm); } }
 
   @media (min-width: 900px) {
     .split--aside { align-items: start; }
