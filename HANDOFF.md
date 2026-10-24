@@ -212,13 +212,10 @@ hints. Order within each block = priority.
 - [ ] **Privacy statement** — fill every `[BRACKETED]` value in
       `privacy.html`, have it reviewed, remove the draft banner
 - [ ] **City** — `"addressLocality": "[CITY]"` in the JSON-LD on `index.html`
-- [ ] **Testimonials consent** — confirm all 14 clients are OK with being
-      quoted, now with 5-star ratings attached
-- [ ] **Testimonials language mix** — decide: the EN page currently shows all
-      14 quotes (English AND Spanish mixed); same on the ES page. Option:
-      show only same-language quotes per page, or sort own-language first,
-      or keep the mix (a note on the page already explains it). One answer
-      from the client, then ~30 min work
+- [x] ~~Testimonials consent~~ — all 14 clients supplied their testimonials
+      themselves, so consent is confirmed (Sep 2026)
+- [x] ~~Testimonials language mix~~ — decided: English quotes on the EN page,
+      Spanish quotes on the ES page (5 EN / 9 ES). Done Sep 2026.
 - [ ] **Spanish review by Valeria** — /es/ is Claude's draft (Latin American
       Spanish); native check before promoting the ES link
 - [x] ~~TikTok handle~~ — confirmed: @nina_psych is the practice's account
