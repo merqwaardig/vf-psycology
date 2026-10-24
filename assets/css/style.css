@@ -1889,6 +1889,8 @@
   .u-mt-lg  { margin-top: var(--sp-lg); }
   .u-mt-xl  { margin-top: var(--sp-xl); }
   .u-mb-md  { margin-bottom: var(--sp-md); }
+  .u-measure-wide { max-width: 92ch; }
+  @media (min-width: 900px) { .u-one-line { white-space: nowrap; } }
 
   .u-grid-2 { --grid-min: 20rem; }
   .u-grid-3 { --grid-min: 16rem; }
