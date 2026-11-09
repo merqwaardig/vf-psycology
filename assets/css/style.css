@@ -888,6 +888,10 @@
   }
 
   .hero__title { max-width: 15ch; }
+  .hero__title .hero__word { display: block; }
+  .hero__word--support    { color: #37494A; }
+  .hero__word--connection { color: #BA7573; }
+  .hero__word--growth     { color: #898D81; }
 
   .hero__subtitle {
     max-width: var(--measure-short);
