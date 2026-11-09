@@ -1917,6 +1917,8 @@
   .u-mt-lg  { margin-top: var(--sp-lg); }
   .u-mt-xl  { margin-top: var(--sp-xl); }
   .u-mb-md  { margin-bottom: var(--sp-md); }
+  .u-figure-narrow { max-width: 26rem; margin: var(--sp-md) auto 0; }
+  .u-figure-narrow img { width: 100%; height: auto; border-radius: var(--r-lg); }
   .u-measure-wide { max-width: 92ch; }
   @media (min-width: 900px) { .u-one-line { white-space: nowrap; } }
 
