@@ -970,10 +970,9 @@
     .hero__note             { order: 7; }
 
     .hero__portrait {
-      aspect-ratio: 1 / 1;
-      /* The source is a 4:5 portrait; a square crop keeps the whole face,
-         with the top of the frame close to the top of the head. */
-      object-position: 50% 12%;
+      /* The photos are 4:5 portraits; show each one in full on phones. */
+      aspect-ratio: 4 / 5;
+      object-position: 50% 50%;
     }
   }
 
