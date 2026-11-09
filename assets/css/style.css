@@ -976,6 +976,9 @@
     }
   }
 
+  /* Photos that are landscape by nature are shown whole, never cropped. */
+  .hero__figure .hero__portrait--full { aspect-ratio: 3 / 2; object-fit: cover; }
+
   .hero__caption {
     margin-top: var(--sp-xs);
     font-size: var(--fs-xs);
