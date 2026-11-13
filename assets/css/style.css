@@ -622,6 +622,15 @@
     text-decoration: none;
   }
 
+  /* The full logo image in the header (wordmark included). */
+  .logo__image {
+    display: block;
+    height: 64px;
+    width: auto;
+    flex: none;
+  }
+  @media (max-width: 639px) { .logo__image { height: 48px; } }
+
   .logo__brain {
     display: block;
     width: auto;
